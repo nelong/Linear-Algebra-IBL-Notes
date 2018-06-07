@@ -1,0 +1,10 @@
+\chapter{Notes to the Instructor}
+
+\renewcommand\notesname{}
+\vspace{-2cm}
+\begingroup
+%\setlength{\parindent}{0pt}% Don't know what this does.  DMC
+\setlength{\parskip}{2ex}
+\renewcommand{\enotesize}{\normalsize}
+\theendnotes
+\endgroup

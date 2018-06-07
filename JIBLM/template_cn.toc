@@ -1,0 +1,10 @@
+\contentsline {chapter}{Preface}{iii}
+\contentsline {chapter}{To the Instructor}{iv}
+\contentsline {chapter}{ To the Student}{v}
+\contentsline {chapter}{\numberline {1}Mandatory Reading}{1}
+\contentsline {section}{\numberline {1.1}Getting Started}{1}
+\contentsline {section}{\numberline {1.2}Student and Instructor Versions}{2}
+\contentsline {chapter}{\numberline {2}Optional Reading}{4}
+\contentsline {section}{\numberline {2.1}Theorem-like Environments}{4}
+\contentsline {section}{\numberline {2.2}Packages, Commands, Styles, and Libraries}{5}
+\contentsline {chapter}{Notes to the Instructor}{7}
