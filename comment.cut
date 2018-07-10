@@ -1,1 +1,9 @@
-I use this set of problems to emphasize that student already have experience with linear algebra problems and that we will be looking to classify all possibilities in related problems
+\chapter{Notes to the Instructor}
+\renewcommand\notesname{}
+\vspace{-2cm}
+\begingroup
+%\setlength{\parindent}{0pt}% Don't know what this does.  DMC
+\setlength{\parskip}{2ex}
+\renewcommand{\enotesize}{\normalsize}
+\theendnotes
+\endgroup

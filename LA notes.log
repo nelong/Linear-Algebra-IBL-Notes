@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.7)  7 JUN 2018 15:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.7)  10 JUL 2018 12:02
 entering extended mode
 **"./LA notes.tex"
 ("LA notes.tex"
@@ -486,9 +486,9 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 
 [2
 
@@ -502,135 +502,208 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
  Straight input of comment.cut.
 (comment.cut [3]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 4.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+ [4
+
+] [5] [6] [7] [8] [9]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 61.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
+) [10] [11
 
+]
+Overfull \hbox (29.62929pt too wide) in paragraph at lines 147--148
+\OT1/ptm/m/n/12 https://cocalc.com/ (fromerly the Sage Math-Cloud at https://cl
+oud.sagemath.com).
+ []
 
-LaTeX Warning: Reference `ch:annotation' on page iv undefined on input line 12.
-
-
-) [4
-
-] [5
-
-] [6]
+[12]
 Chapter 1.
 Including 'annotation' comment.
 \openout4 = `comment.cut'.
 
- Straight input of comment.cut. (comment.cut)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 110.
+ Straight input of comment.cut. (comment.cut
+\openout3 = `"LA notes.ent"'.
 
+)
 [1
 
 
 ] [2] [3]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 195.
- [4] [5] [6] [7] [8] [9] [10]
-<3planeplot.png, id=63, 237.2865pt x 161.403pt>
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 242.
+ [4] [5] [6] [7] [8] [9] Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+
+Straight input of comment.cut. (comment.cut) [10]
+Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+ Straight input of comment.cut. (comment.cut)
+<3planeplot.png, id=82, 237.2865pt x 161.403pt>
 File: 3planeplot.png Graphic file (type png)
 <use 3planeplot.png>
-Package pdftex.def Info: 3planeplot.png  used on input line 365.
+Package pdftex.def Info: 3planeplot.png  used on input line 457.
 (pdftex.def)             Requested size: 355.92885pt x 242.1039pt.
- [11 <./3planeplot.png>] [12] [13]
-[14] [15] [16] [17] [18]
+
+[11] [12 <./3planeplot.png>] [13] [14] [15] Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+
+Straight input of comment.cut. (comment.cut) [16] [17] [18] [19]
 LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 560.
- [19]
-<network.png, id=96, 539.616pt x 264.99pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 655.
+
+Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+ Straight input of comment.cut. (comment.cut)
+[20]
+<network.png, id=118, 539.616pt x 264.99pt>
 File: network.png Graphic file (type png)
 <use network.png>
-Package pdftex.def Info: network.png  used on input line 593.
+Package pdftex.def Info: network.png  used on input line 691.
 (pdftex.def)             Requested size: 269.80734pt x 132.49467pt.
- [20 <./network.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 605--607
-[]\OT1/ptm/b/n/12 Question 73. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A \OT
+ [21 <./network.png>] Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+
+Straight input of comment.cut. (comment.cut)
+Underfull \hbox (badness 10000) in paragraph at lines 714--716
+[]\OT1/ptm/b/n/12 Question 76. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A \OT
 1/ztmcm/m/n/12 = []$\OT1/ptm/m/it/12 , $\OML/ztmcm/m/it/12 B \OT1/ztmcm/m/n/12 
 = []$\OT1/ptm/m/it/12 , 
  []
 
 
-Overfull \hbox (43.05882pt too wide) in paragraph at lines 613--614
-[]\OT1/ptm/b/n/12 Question 74. []\OT1/ptm/m/it/12 Sym-bol-i-cally, $\OT1/ztmcm/
+Overfull \hbox (43.05882pt too wide) in paragraph at lines 722--723
+[]\OT1/ptm/b/n/12 Question 77. []\OT1/ptm/m/it/12 Sym-bol-i-cally, $\OT1/ztmcm/
 m/n/12 (\OML/ztmcm/m/it/12 A \OT1/ztmcm/m/n/12 + \OML/ztmcm/m/it/12 B\OT1/ztmcm
 /m/n/12 )[] = []$ \OT1/ptm/m/it/12 and $\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 k
 A\OT1/ztmcm/m/n/12 )[] = []$ 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 629--631
-[]\OT1/ptm/b/n/12 Question 77. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A \OT
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 738--740
+[]\OT1/ptm/b/n/12 Question 80. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A \OT
 1/ztmcm/m/n/12 = []$\OT1/ptm/m/it/12 , $\OML/ztmcm/m/it/12 B \OT1/ztmcm/m/n/12 
 = []$\OT1/ptm/m/it/12 , 
  []
 
-[21] [22] [23] [24] <xymatrix 2x1 191> [25]
-Chapter 2.
-[26
+[23] Including 'annotation' comment.
+\openout4 = `comment.cut'.
 
-] [27]
-Underfull \hbox (badness 1783) in paragraph at lines 828--829
-[]\OT1/ptm/b/n/12 Question 110. []\OT1/ptm/m/it/12 We are go-ing to take a look
+ Straight input of comment.cut.
+(comment.cut) [24] [25] Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+
+Straight input of comment.cut. (comment.cut) <xymatrix 2x1 191> [26]
+Chapter 2.
+Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+ Straight input of comment.cut. (comment.cut)
+[27
+
+] [28] Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+ Straight input of comment.cut.
+(comment.cut)
+Underfull \hbox (badness 1783) in paragraph at lines 948--949
+[]\OT1/ptm/b/n/12 Question 113. []\OT1/ptm/m/it/12 We are go-ing to take a look
  at the vec-tor space 
  []
 
-[28] [29]
-Overfull \hbox (8.85216pt too wide) in paragraph at lines 884--885
-[]\OT1/ptm/b/n/12 Question 118. []\OT1/ptm/m/it/12 Draw a plot of the points in
+[29] [30]
+Overfull \hbox (8.85216pt too wide) in paragraph at lines 1008--1009
+[]\OT1/ptm/b/n/12 Question 121. []\OT1/ptm/m/it/12 Draw a plot of the points in
  $\U/msb/m/n/12 R[]$ \OT1/ptm/m/it/12 given by $\OMS/ztmcm/m/n/12 f[] \OT1/ztmc
 m/m/n/12 = [] \OMS/ztmcm/m/n/12 2 \U/msb/m/n/12 R[]\OMS/ztmcm/m/n/12 j\OML/ztmc
 m/m/it/12 x[]x[] \OMS/ztmcm/m/n/12 
  []
 
-[30] [31]
-Overfull \hbox (1.9832pt too wide) in paragraph at lines 974--975
-[]\OT1/ptm/b/n/12 Question 143. []\OT1/ptm/m/it/12 Does the span of $[]$ where 
+Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+ Straight input of comment.cut. (comment.cut)
+[31] [32] [33]
+Overfull \hbox (1.9832pt too wide) in paragraph at lines 1101--1102
+[]\OT1/ptm/b/n/12 Question 146. []\OT1/ptm/m/it/12 Does the span of $[]$ where 
 $[] \OMS/ztmcm/m/n/12 2 \U/msb/m/n/12 R[]$ \OT1/ptm/m/it/12 have to go through
  []
 
-[32] [33] [34] [35]
-<smiley.png, id=151, 264.99pt x 149.358pt>
+[34] [35] Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+ Straight input of comment.cut.
+(comment.cut) [36]
+<smiley.png, id=173, 264.99pt x 149.358pt>
 File: smiley.png Graphic file (type png)
 <use smiley.png>
-Package pdftex.def Info: smiley.png  used on input line 1092.
+Package pdftex.def Info: smiley.png  used on input line 1223.
 (pdftex.def)             Requested size: 264.98935pt x 149.35762pt.
- [36 <./smiley.png>] [37] [38] [39] [40] [41]
-Chapter 3.
-[42
+ [37] [38 <./smiley.png>] [39] [40]
+Including 'annotation' comment.
+\openout4 = `comment.cut'.
 
-] [43] [44] [45]
-Overfull \hbox (0.12645pt too wide) in paragraph at lines 1368--1369
-[]\OT1/ptm/b/n/12 Question 218. []\OT1/ptm/m/it/12 Give the el-e-men-tary ma-tr
+ Straight input of comment.cut. (comment.cut)
+[41] [42]
+Chapter 3.
+[43
+
+] [44] [45] [46] [47]
+Overfull \hbox (0.12645pt too wide) in paragraph at lines 1511--1512
+[]\OT1/ptm/b/n/12 Question 223. []\OT1/ptm/m/it/12 Give the el-e-men-tary ma-tr
 ix ob-tained by per-form-ing the given
  []
 
-[46] [47] [48] [49] [50] [51]
-Underfull \hbox (badness 2460) in paragraph at lines 1535--1536
-[]\OT1/ptm/b/n/12 Question 246. []\OT1/ptm/m/it/12 Use co-fac-tor ex-pan-sion a
+[48] [49] [50] Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+ Straight input of comment.cut.
+(comment.cut) Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+ Straight input of comment.cut.
+(comment.cut) [51] [52] [53]
+Underfull \hbox (badness 2460) in paragraph at lines 1690--1691
+[]\OT1/ptm/b/n/12 Question 252. []\OT1/ptm/m/it/12 Use co-fac-tor ex-pan-sion a
 long the first col-umn of 
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 1537--1538
-[]\OT1/ptm/b/n/12 Question 247. []\OT1/ptm/m/it/12 Use co-fac-tor ex-pan-sion a
+Underfull \hbox (badness 2837) in paragraph at lines 1692--1693
+[]\OT1/ptm/b/n/12 Question 253. []\OT1/ptm/m/it/12 Use co-fac-tor ex-pan-sion a
 long the sec-ond row of 
  []
 
-[52] [53]
-Underfull \hbox (badness 4660) in paragraph at lines 1581--1582
-[]\OT1/ptm/b/n/12 Question 257. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A[] 
+[54] Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+ Straight input of comment.cut.
+(comment.cut)
+Underfull \hbox (badness 4660) in paragraph at lines 1739--1740
+[]\OT1/ptm/b/n/12 Question 263. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A[] 
 \OT1/ztmcm/m/n/12 = \OML/ztmcm/m/it/12 LU[] \OT1/ztmcm/m/n/12 = []$\OT1/ptm/m/i
 t/12 , where $\OML/ztmcm/m/it/12 L \OT1/ztmcm/m/n/12 = []$\OT1/ptm/m/it/12 , 
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 1581--1582
+Underfull \hbox (badness 3407) in paragraph at lines 1739--1740
 \OML/ztmcm/m/it/12 U \OT1/ztmcm/m/n/12 = []$\OT1/ptm/m/it/12 , and $[] \OT1/ztm
 cm/m/n/12 = []$\OT1/ptm/m/it/12 . Com-pute $\OML/ztmcm/m/it/12 det\OT1/ztmcm/m/
 n/12 (\OML/ztmcm/m/it/12 L\OT1/ztmcm/m/n/12 )$\OT1/ptm/m/it/12 , $\OML/ztmcm/m/
@@ -638,41 +711,72 @@ it/12 det\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 U\OT1/ztmcm/m/n/12 )$\OT1/ptm/m/
 it/12 , 
  []
 
-[54] [55] [56] [57] [58] [59]
+[55] Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+ Straight input of comment.cut.
+(comment.cut) [56] [57] Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+
+Straight input of comment.cut. (comment.cut) [58] [59] [60] [61]
 Chapter 4.
-[60
+Including 'annotation' comment.
+\openout4 = `comment.cut'.
 
-] [61] ("LA notes.aux")
+ Straight input of comment.cut. (comment.cut)
+[62
 
-LaTeX Warning: There were undefined references.
+]
+Overfull \hbox (16.93465pt too wide) in paragraph at lines 1940--1940
+[]\OT1/ptm/b/n/12 Question 304. []\OT1/ptm/m/it/12 Find a vec-tor in $\OML/ztmc
+m/m/it/12 M[]\OT1/ztmcm/m/n/12 (\U/msb/m/n/12 R\OT1/ztmcm/m/n/12 )$ \OT1/ptm/m/
+it/12 that is or-thog-o-nal to $\OML/ztmcm/m/it/12 A \OT1/ztmcm/m/n/12 = []$\OT
+1/ptm/m/it/12 . 
+ []
 
- ) 
+[63]
+Overfull \hbox (7.56177pt too wide) in paragraph at lines 1971--1972
+[]\OT1/ptm/m/it/12 We will con-struct the or-thonor-mal ba-sis $\OML/ztmcm/m/it
+/12  \OT1/ztmcm/m/n/12 = \OMS/ztmcm/m/n/12 f[]\OML/ztmcm/m/it/12 ; []; []\OMS/
+ztmcm/m/n/12 g$ \OT1/ptm/m/it/12 by go-ing through
+ []
+
+[64] [65] Including 'annotation' comment.
+\openout4 = `comment.cut'.
+
+ Straight input of comment.cut.
+(comment.cut ("LA notes.ent" [66
+
+
+] [67])) [68] ("LA notes.aux") ) 
 Here is how much of TeX's memory you used:
- 5814 strings out of 493305
- 74373 string characters out of 3138872
- 187273 words of memory out of 3000000
- 9173 multiletter control sequences out of 15000+200000
- 55794 words of font info for 130 fonts, out of 3000000 for 9000
+ 5870 strings out of 493305
+ 76071 string characters out of 3138872
+ 186317 words of memory out of 3000000
+ 9178 multiletter control sequences out of 15000+200000
+ 61815 words of font info for 141 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,45p,3250b,909s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symb
-ols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb><C:
-/Users/longne/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Us
-ers/longne/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
-rw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xypic/xyatip10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on "LA notes.pdf" (67 pages, 325081 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/ba
+se/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/rsfs/rsfs10.pfb><C:/Users/longne/AppData/Roaming/MiKTeX/2.9/fonts/ty
+pe1/urw/symbol/usyr.pfb><C:/Users/longne/AppData/Roaming/MiKTeX/2.9/fonts/type1
+/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/xypic/xyatip10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xypic/xyb
+tip10.pfb>
+Output written on "LA notes.pdf" (80 pages, 362642 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
+ 330 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
