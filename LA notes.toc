@@ -1,7 +1,7 @@
 \contentsline {chapter}{To the Instructor}{iv}
 \contentsline {section}{\numberline {0.1}Course Background}{iv}
 \contentsline {section}{\numberline {0.2}Classroom Mechanics}{vi}
-\contentsline {section}{\numberline {0.3}Student Expectations and Grading}{ix}
+\contentsline {subsection}{\numberline {0.2.1}Student Expectations and Grading}{viii}
 \contentsline {chapter}{To the Student}{xi}
 \contentsline {chapter}{\numberline {1}Efficiently Solving Systems of Linear Equations and Matrix Operations}{1}
 \contentsline {section}{\numberline {1.1}Warmup Problems}{1}
