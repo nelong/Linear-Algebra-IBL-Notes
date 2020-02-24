@@ -1,0 +1,365 @@
+
+\include{jiblm_cn}
+
+%
+%%%%%%%%%%%%%%%%%%%%% Annotation Environment Switch%%%%%%%%%%%%
+%\StudentVersion
+\InstructorVersion
+%%%%%%%%%%%%%%%%%%%%% Annotation Environment Switch%%%%%%%%%%%%
+%
+
+
+\begin{document}
+\large
+\frontmatter
+\title{Author's Package }
+\author{Paul J. Kapitza \\ Technical Editor}
+\affiliation{Georgia Highlands College}
+\maketitle
+\tableofcontents
+
+\chapter{Preface}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%BEGIN REMOVAL {1} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This document provides an introduction to the \textbf{JIBLM} journal package.
+As stated under the \emph{Information for Authors} at \emph{www.jiblm.org},
+this downloadable template is designed to be self-explanatory,
+using standard LaTeX commands and allowing the author to see the formatting exactly as
+an accepted manuscript will appear in the journal.  The form \texttt{template.tex} serves two purposes:
+\begin{enumerate}
+\item It is a guide to typesetting your course notes in JIBLM format using \LaTeX.
+\item It is a template to be modified to produce your print ready submission to JIBLM.
+\end{enumerate}
+
+\noindent
+To get started:
+\begin{enumerate}
+\item download the Submission Form,
+\item download the LaTeX Template,
+\item compile \texttt{template.tex} and read the output, and
+\item place your notes into a copy of the file \texttt{template.tex}.
+\end{enumerate}
+
+\noindent
+If you encounter problems, please contact the Technical Editor for assistance;
+we welcome feedback.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%END REMOVAL {1} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%To the Instructor%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{annotation}
+\chapter{To the Instructor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%BEGIN REMOVAL {2} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This is a mandatory introduction to your course notes.  For your convenience, we repeat here
+the \emph{Information for Authors} from the website.
+
+Because notes are intentionally brief, it is essential that they be written in a manner that will be usable by other
+instructors. For this reason, we ask that you include an introduction that will provide instructors
+with a clear understanding of how you have used these notes. This should be a description of the
+course you taught, which includes:
+\begin{itemize}
+\item  its level and role within the broader curriculum,
+\item  your expectations and grading of the students,
+\item  any unusual characteristics of the class or classroom,
+\item  the approximate class size(s), and
+\item other information that will be useful to a less-experienced instructor.
+A well-written introduction will minimize the instructor's need for further guidance from you.
+\end{itemize}
+
+If you choose to use the \textbackslash endnotes feature described in Chapter \ref{ch:annotation} then
+you may wish to put a note in this section such as, ``I have added comments on particular problems
+throughout the notes.  These superscripts refer to endnotes in the last Chapter titled,
+``Notes to the Instructor."
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%END REMOVAL {2} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{annotation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%To the Student%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{ To the Student}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%BEGIN REMOVAL {3} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This is an optional introduction for the students.  You may add other
+optional chapter-like components, such as
+\verb|\chapter{Acknowledgments}|.  If you begin a chapter-like
+component with \verb|\chapter{}|, the component will be created but
+no title will appear.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%END REMOVAL {3} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\mainmatter
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%BEGIN REMOVAL {4} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Mandatory Reading}
+
+\section{Getting Started}
+
+The base requirement is  a \LaTeX{} distribution. Once you have this, place the following
+three files from \emph{www.jiblm.org/jiblm/info/authorinfo.aspx} into your working directory.
+
+\begin{enumerate}
+    \item \texttt{JIBLM.tex} -- This is the file containing additional \LaTeX{} commands
+    beyond those of the standard book class in order to typeset a JIBLM document.  You should not need
+    to edit this file.
+    \item \texttt{template.tex} -- This file contains the text you are currently reading.
+    \item A copy of \texttt{template.tex}, named \texttt{myfile.tex} or whatever you like.
+\end{enumerate}
+
+\noindent
+You are now ready to edit \texttt{myfile.tex} which will become your submission.
+
+\begin{enumerate}
+
+\item At the top of \texttt{myfile.tex}, locate
+\begin{verbatim}
+  %%% Begin {Title Page} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \title{Author's Package}
+  \author{Paul J. Kapitza}
+  \affiliation{Berry College}
+  \maketitle
+  %%% End {Title Page} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{verbatim}
+and replace ``Author's Package", ``Paul J. Kapitza" and ``Berry
+College" with the title of your course notes, your name and your
+affiliation.
+
+\item Delete any of the subsequent content of \texttt{myfile.tex} that you wish with
+    the exception of the commands \verb|\frontmatter|,
+   \verb|\mainmatter|, \verb|\backmatter| and
+   \verb|\end{document}| commands. The blocks of statements
+   to be removed are easily identified as follows:
+\begin{center}
+\verb|%%%%%%%%%%%%%%%%%%%%%%BEGIN REMOVAL {n} %%%%%%%%%%%%%%%%%%%%%%|
+....material to be removed....
+\verb|%%%%%%%%%%%%%%%%%%%%%END REMOVAL {n} %%%%%%%%%%%%%%%%%%%%%%%%%|
+\end{center}
+
+\end{enumerate}
+
+Your \texttt{myfile.tex} may now be filled in with your own course notes.
+
+\section{Student and Instructor Versions}\label{ch:annotation}
+
+You may wish to communicate with two different audiences, the students who
+will study the materials and the instructors who will teach from the materials.
+The \verb|\annotation| environment enables you to create one document that serves
+as both a student and an instructor version.  By toggling a single comment in the preamble,
+text and mathematics which is encased within the environment will be removed or restored
+upon compilation, providing two versions from the same document.  Usage guidelines follow.
+
+\begin{enumerate}
+
+
+\item To change versions, toggle the comment symbol between the following two lines in \texttt{myfile.tex}.
+
+\begin{center}
+\verb|%\StudentVersion|\\
+\verb|\InstructorVersion|\\
+\end{center}
+
+\item Use the \verb|\annotation| environment by placing opening and closing commands on lines
+separate from the material to be annotated, with no starting spaces or characters of any type
+on the lines containing the commands.  For example:
+
+\begin{center}
+\verb|\begin{annotation}|\\
+\verb|... your instructor-specific text goes here ...|\\
+\verb|\end{annotation}| \\
+\end{center}
+
+
+\item If a large comment is required, place the text in a separate file and use the commands:
+
+\begin{center}
+ \verb|\begin{annotation}|\\
+ \verb|\input{filename.tex}|\\
+ \verb|\end{annotation}|\\
+\end{center}
+
+\item Numbered sequences should be handled with caution
+since the automatic numbering of Chapters, Theorems, Equations, etc., is recalculated when
+material is removed by the environment.
+
+\item While you may bracket anything you like using the \verb|\annotation{}| environment,
+such as comments within the theorem sequence, you may wish to add annotations
+to the instructor as footnotes throughout the text which can be made to appear as a chapter-like
+component at the end of the document.
+\begin{annotation}
+\endnote{This is an example of a footnote to the instructor which will appear at the very
+end of the document.}
+\end{annotation}
+This document has such a
+component entitled \emph{Notes to the Instructor} which will appear in the
+Instructor Version but not in the Student Version.
+\begin{annotation}
+\endnote{This is another example of a footnote to the instructor, in case you missed the first one.}
+\end{annotation}
+To do this:
+\begin{enumerate}
+   \item  Insert in the text itself footnotes to the instructor
+       in the following format.
+       \begin{verbatim}
+   \begin{annotation}
+   \endnote{This is an example of a footnote to the instructor.}
+   \end{annotation}
+       \end{verbatim}
+   \item After the command \verb|\backmatter|, add the chapter-like component
+       \emph{Notes to the Instructor} that you see following the
+       \verb|\backmatter| command in \texttt{template.tex}.  Only do this if you have at
+       least one endnote; otherwise you will get an error.
+\end{enumerate}
+\end{enumerate}
+
+
+
+\chapter{Optional Reading}
+
+\section{Theorem-like Environments}
+
+ Theorem environments for declarations are provided and are numbered globally.
+As an example of the \verb|\theorem{}| environment consider the following typesetting example.
+\begin{theorem}
+(The Currant minimax principle.) Let $T$ be completely continuous self adjoint operator
+in a Hilbert space $H$. Let $n$ be an arbitrary integer and let $u_1,\ldots,u_{n-1}$ be
+an arbitrary system of $n-1$ linearly independent elements of $H$. Denote
+\begin{equation}
+\max_{\substack{v\in H, v\neq
+0\\(v,u_1)=0,\ldots,(v,u_n)=0}}\frac{(Tv,v)}{(v,v)}=m(u_1,\ldots, u_{n-1})
+\label{thm:minmax1}
+\end{equation}
+Then the $n$-th eigenvalue of $T$ is equal to the minimum of these maxima, when
+minimizing over all linearly independent systems $u_1,\ldots u_{n-1}$ in $H$,
+\begin{equation}
+\mu_n = \min_{\substack{u_1,\ldots, u_{n-1}\in H}} m(u_1,\ldots, u_{n-1}) \label{thm:minmax2}
+\end{equation}
+\end{theorem}
+Note: The above equations are automatically numbered as equation (\ref{thm:minmax1}) and
+(\ref{thm:minmax2}).
+
+
+
+A number of theorem-like environments are included for structuring mathematical statements.  Examples of these are given below in alphabetical order.
+
+\begin{axiom}
+This is an axiom
+\end{axiom}
+
+
+\begin{definition}
+This is a definition
+\end{definition}
+
+
+\begin{lemma}
+This is a lemma
+\end{lemma}
+
+\begin{problem}
+This is a problem
+\end{problem}
+
+
+
+\begin{theorem}[Main Theorem]
+This is a theorem
+\end{theorem}
+
+Additionally, {\bf acknowledgment}, {\bf algorithm}, {\bf case}, {\bf claim}, {\bf conclusion}, {\bf condition},
+{\bf conjecture}, {\bf corollary}, {\bf criterion}, {\bf example}, {\bf exercise}, {\bf notation},
+{\bf proposition}, {\bf remark}, {\bf solution}, {\bf summary}, and {\bf proof} are available.
+
+\section{Packages, Commands, Styles, and Libraries}
+
+\begin{enumerate}
+
+\item The following packages are used by the Journal:
+\begin{itemize}
+    \item \texttt{book}--The base book class of \LaTeX.
+    \item \texttt{time}--Make system time available.
+    \item \texttt{enumerate}--Extended enumeration package.
+    \item \texttt{amssymb}, \texttt{amsmath}, \texttt{latexsym}, \texttt{amsthm}--Symbol libraries.
+    \item \texttt{lettrine}--Drop-caps.
+    \item \texttt{mathptmx}--Times Roman type package for both math and text.
+    \item \texttt{fancyhdr}--Header customization.
+    \item \texttt{comment}--Base package for the annotation environment.
+    \item \texttt{endnotes}--End notes package.
+\end{itemize}
+
+
+\item The current Journal Style does not contain any packages which support graphics content.
+To include this facility, place a \verb|\usepackage{pkg-choice}| command  directly after
+the first command line in your text file, \verb|\include{JIBLM}|.  Popular packages available
+include \texttt{graphics}, \texttt{graphicx} and \texttt{epsfig}.
+
+
+\item The following sectioning commands are available:
+\begin{itemize}
+\item \verb"\chapter{Chapter Title}" command produces a new chapter starting on a new page,
+\item \verb"\section{Section Title}" command for major sections, and
+\item \verb"\subsection{Subsection Title}" command for subsections.
+\end{itemize}
+
+\item Generally, all the styles available from \LaTeX{} are available, including:
+\begin{itemize}
+    \item Typeset text shapes include \emph{Emphasize}, \textbf{Bold},
+\textit{Italics} and \textsl{Slanted} texts.
+\item You can also typeset \textrm{Roman}, \textsf{Sans Serif}, \textsc{Small Caps}, and
+\texttt{Typewriter} families.
+\item The size tags are available;  {\tiny Tiny},
+{\scriptsize Scriptsize}, {\footnotesize Footnotesize}, {\small Small}, {\normalsize
+Normalsize}, {\large Large 1}, {\Large Large 2 }, {\LARGE Large 3}, \ {\huge Huge 1} and {\Huge
+Huge 2}.
+
+\end{itemize}
+
+\item The symbol libraries included within the journal package are the
+\texttt{amssymb}, \texttt{amsmath}, \texttt{latexsym} and \texttt{amsthm} packages.
+This collection provides for most of the commonly used mathematical typesetting tools to be
+directly accessed. Consult your favorite \TeX{} reference for details.   Of particular interest
+are the mathematical styles,
+\begin{enumerate}
+\item $\mathbb{BLACKBOARD}$, (e.g., $\mathbb{R}\,$,$\mathbb{Z}\,$,$\mathbb{C}$).
+\item $\mathcal{CALLIGRAPHIC}$, (e.g. $\mathcal{S}= \emptyset$), and
+\item $\mathfrak{Fraktur}$.
+\end{enumerate}
+
+
+
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%END REMOVAL {4} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%BEGIN REMOVAL {5} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+\begin{annotation}
+\chapter{Notes to the Instructor}
+
+\renewcommand\notesname{}
+\vspace{-2cm}
+\begingroup
+%\setlength{\parindent}{0pt}% Don't know what this does.  DMC
+\setlength{\parskip}{2ex}
+\renewcommand{\enotesize}{\normalsize}
+\theendnotes
+\endgroup
+\end{annotation}
+
+\vspace{.1in}
+
+You can also add any text you want here.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%END REMOVAL {5} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

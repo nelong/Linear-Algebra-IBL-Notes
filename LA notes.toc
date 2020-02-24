@@ -1,0 +1,42 @@
+\contentsline {chapter}{To the Instructor}{iv}
+\contentsline {section}{\numberline {0.1}Course Background}{iv}
+\contentsline {section}{\numberline {0.2}Classroom Mechanics}{vi}
+\contentsline {subsection}{\numberline {0.2.1}Student Expectations and Grading}{viii}
+\contentsline {chapter}{To the Student}{xi}
+\contentsline {chapter}{\numberline {1}Efficiently Solving Systems of Linear Equations and Matrix Operations}{1}
+\contentsline {section}{\numberline {1.1}Warmup Problems}{1}
+\contentsline {section}{\numberline {1.2}Solving Linear Systems}{3}
+\contentsline {subsection}{\numberline {1.2.1}Geometric Interpretation of a Solution Set}{10}
+\contentsline {section}{\numberline {1.3}Vector and Matrix Equations}{12}
+\contentsline {section}{\numberline {1.4}Solution Sets of Linear Systems}{16}
+\contentsline {section}{\numberline {1.5}Applications}{20}
+\contentsline {section}{\numberline {1.6}Matrix operations}{22}
+\contentsline {subsection}{\numberline {1.6.1}Special Types of Matrices}{23}
+\contentsline {subsection}{\numberline {1.6.2}Matrix Multiplication}{24}
+\contentsline {chapter}{\numberline {2}Vector Spaces}{27}
+\contentsline {section}{\numberline {2.1}Subspaces}{30}
+\contentsline {section}{\numberline {2.2}Span}{32}
+\contentsline {section}{\numberline {2.3}Linear Independence}{34}
+\contentsline {section}{\numberline {2.4}Linear Transformations}{35}
+\contentsline {section}{\numberline {2.5}Applications}{41}
+\contentsline {chapter}{\numberline {3}Connecting Ideas}{43}
+\contentsline {section}{\numberline {3.1}Basis and Dimension}{43}
+\contentsline {subsection}{\numberline {3.1.1}rank and nullity}{44}
+\contentsline {subsection}{\numberline {3.1.2}Coordinate Vectors relative to a basis}{45}
+\contentsline {section}{\numberline {3.2}Invertible Matrices}{47}
+\contentsline {subsection}{\numberline {3.2.1}Elementary Matrices}{48}
+\contentsline {subsection}{\numberline {3.2.2}Computing Inverses}{49}
+\contentsline {subsection}{\numberline {3.2.3}Invertible Matrix Theorem}{50}
+\contentsline {section}{\numberline {3.3}Invertible Linear Transformations}{51}
+\contentsline {section}{\numberline {3.4}LU factorization of matrices}{52}
+\contentsline {section}{\numberline {3.5}Determinants}{53}
+\contentsline {subsection}{\numberline {3.5.1}Computing Determinants}{53}
+\contentsline {subsection}{\numberline {3.5.2}Properties of Determinants}{55}
+\contentsline {section}{\numberline {3.6}Eigenvalues and Eigenvectors}{56}
+\contentsline {subsection}{\numberline {3.6.1}Diagonalizability}{59}
+\contentsline {subsection}{\numberline {3.6.2}Eigenvalues and Eigenvectors of Linear Transformations}{60}
+\contentsline {chapter}{\numberline {4}Inner Product Spaces}{62}
+\contentsline {section}{\numberline {4.1}Inner Products}{62}
+\contentsline {section}{\numberline {4.2}Orthogonal Complements}{64}
+\contentsline {section}{\numberline {4.3}Orthonormal Bases.}{64}
+\contentsline {chapter}{Notes to the Instructor}{66}
