@@ -33,7 +33,7 @@
                 \end{bmatrix}
         \fi
 }
-
+%Here is a note!!!
 \begin{document}
 \large
 \frontmatter
@@ -43,6 +43,7 @@ Notes and Problems}
 \affiliation{Stephen F. Austin State University}
 \maketitle
 \tableofcontents
+% There is no index. I think the notes should include an index. If, for instructional purposes, you don't want to include one, I have two further suggestions. First, the instructor version should have an index. Second, I think that the introductory materials should prompt the class to create their own index as they go. I think this would support the pedagogical goals of not providing one, could explain those goals, and alert everyone from the start that they should be building the index.
 
 \begin{annotation}
 \chapter{To the Instructor}
@@ -71,7 +72,7 @@ One fruitful practice to involve students who are not presenting includes having
 
 Students will need to be reminded  about the goals, expectations, and reasoning for this pedagogical approach. These reminders should be done both at the individual level and as a class, but need to be done regularly during the first half of the course. One of the most potent reminders is pointing out how much good work and understanding students are able to generate themselves. Additionally, students find that they end up really thinking about math rather than trying to get an answer. Mike Starbird has a set of short videos on YouTube that give some main points of the book "The 5 Elements of Effective Thinking" by Burger and Starbird. I have had good success with having students watch these videos and giving a short written reflection. I use  some other reflective exercises when I anticipate that students will become frustrated with their increased involvement in the forward progress of the course.
 
-I have some general rules that help me  decide when to talk and what to talk about during class meetings. The first guidance is to not say anything that a student can say. By this, I mean that as an instructor, you should speak when what needs to be said can only come from the instructor. Allowing students the space and time to understand and accurately state a question or problem is central to active, inquiry-based classrooms. It can be very hard to understand when you need to intervene but it is essential to set the expectation of  student commentary from the start of the course. Two topics which students cannot easily discuss without guidance are notation and mathematical conventions. For example, you might publicly compliment a student  for good use of notation or effective wording choice in stating  a question, then talk about how the choices of the presenter \emph{guide} the reader. Consider  taking time to name as much as possible after students and give students as much credit as possible for their propositions. For instance, you can name a conjecture after the student who first proposed it, like the “\emph{Jane Doe Conjecture}.” I have found it useful to have some intermediate questions in my head at the start of class so that if the conversation stalls, I can pose a question that puts everyone on equal footing (an underprepared student can potentially contribute as much as a well-prepared student). With any additional time after student presentations, I either start students  on the next set of problems (so that I can head off any stumbling blocks early) or briefly introduce the next concept through the gap in knowledge that would be helpful to fill. For instance, when starting the idea of span of a set of vectors, I like to prompt a discussion on how many vectors can be generated from linear combinations of just two vectors.
+I have some general rules that help me decide when to talk and what to talk about during class meetings. The first guidance is to not say anything that a student can say. By this, I mean that as an instructor, you should speak when what needs to be said can only come from the instructor. Allowing students the space and time to understand and accurately state a question or problem is central to active, inquiry-based classrooms. It can be very hard to understand when you need to intervene but it is essential to set the expectation of  student commentary from the start of the course. Two topics which students cannot easily discuss without guidance are notation and mathematical conventions. For example, you might publicly compliment a student  for good use of notation or effective wording choice in stating  a question, then talk about how the choices of the presenter \emph{guide} the reader. Consider  taking time to name as much as possible after students and give students as much credit as possible for their propositions. For instance, you can name a conjecture after the student who first proposed it, like the “\emph{Jane Doe Conjecture}.” I have found it useful to have some intermediate questions in my head at the start of class so that if the conversation stalls, I can pose a question that puts everyone on equal footing (an underprepared student can potentially contribute as much as a well-prepared student). With any additional time after student presentations, I either start students  on the next set of problems (so that I can head off any stumbling blocks early) or briefly introduce the next concept through the gap in knowledge that would be helpful to fill. For instance, when starting the idea of span of a set of vectors, I like to prompt a discussion on how many vectors can be generated from linear combinations of just two vectors.
 
 
 \subsection{Student Expectations and Grading}
@@ -311,7 +312,7 @@ $$[A|b]=\begin{bmatrix} a_{11} & a_{12} & ... &  a_{1n} &|&b_1\\
 
 For some properties of the system of equations, we need only look at the coefficient matrix but others will need the augmented matrix. It is important to know the difference and be able to state which corresponding matrix you are using in your work.
 
-\begin{question} What is the coefficient matrix for the previous systems? Give the coefficient matrix for Question $i$ as $A_i$. (Hint: You should have 10 answers to this question from Questions 1, 2, 3, 5, 6, 9, 10, 11, and three from Question 13.)
+\begin{question} What is the coefficient matrix for the previous systems? Give the coefficient matrix for Question $i$ as $A_i$. (Hint: You should have 10 answers to this question from Questions 1, 2, 3, 5, 6, 9, 11, and three from Question 13.)
 \end{question}
 
 \begin{question} What is the augmented matrix for the previous systems? Give the augmented matrix for Question $i$ as $A_i$. (Hint: You should have 10 answers to this question.)
@@ -378,9 +379,7 @@ $$-6r+10s-2t=3$$
 \end{enumerate}
 \end{question}
 \begin{question}
-Given an augmented matrix $[A|b]$ and its row reduced echelon form $[A'|b']$, write a procedure (set of steps) to give the solution set to the corresponding systems of equations. Make sure you are clear in writing out your steps.
-
-Are there any ways in which your procedure will fail to work? Are there any systems whose augmented matrices will not have a reduced row echelon form?
+Once you have the augmented matrix for a system of linear equations in reduced row-echelon form, how do you use it to determine the solution set for the system? Write a step-by-step procedure that is general enough to be used on any system of linear equations. Be aware of any implicit assumptions you're making (and try to avoid them). 
 \end{question}
 
 
@@ -406,7 +405,7 @@ Classwide statement of uniqueness theorem:
 
 \end{theorem}
 
-The following two proofs are difficult and one of the reasons we will be resubmitting proofs.
+The following two proofs are difficult and one of the reasons we will be resubmitting proofs. % I had a really hard time understanding the level of proof the author expected here, because the students really don't know very much linear algebra yet
 \begin{annotation}
 \endnote{This ends up being a great place to talk about being careful about what exactly is being said. In student work, you will often see phrases like "matrix is unique" or "matrix is consistent".  This is a great time to talk to students about kinds of objects and the properties of an object type. For instance, a matrix cannot be consistent but a system of equations can be. A matrix can be unique but more often than not the student means that the associated system of equations has a unique solution. One of the great struggles in these junior level courses is getting students into the habit of editing their work with precision.
 
@@ -465,7 +464,7 @@ Plotting the equations, $3x-2y-z=0$, $2x+y+z=10$, and $x+4y+3z=20$ in red, yello
 \bq For each of the systems in Question \ref{q3}, use Sage to draw a plot of each of the equations in the system and write a sentence for each system about why the plot and your answer to Question \ref{q3} make sense.
 \eq
 
-If you remember parametric equations of lines and planes in space from multivariable calculus, then we will return to those ideas in Section \ref{s1}.
+We will return to the idea of parametric equations of lines and planes in space, which you may remember from multivariable calculus, in Section \ref{s1}.
 
 \section{Vector and Matrix Equations}
 Recall that two vectors in $\mathbb{R}^n$ are equal if and only if all of their components are equal.
@@ -506,7 +505,7 @@ $$x_1 \colvec{2}{1}{1}+x_2 \colvec{2}{-1}{1} = \colvec{2}{3}{-4}$$
 \bq Give an example of a vector $\colvec{3}{a}{b}{c}$ such that the equation $$x_1\colvec{3}{1}{1}{0}+x_2 \colvec{3}{0}{0}{1}+x_3 \colvec{3}{a}{b}{c}=\colvec{3}{7}{0}{-2}$$ has exactly 1 solution or explain why no such vector exists.
 \eq
 
-\begin{definition} A \textbf{linear combination} of a set $S$ is a vector of the form $$\sum_{i=1}^n c_i \vec{v_i} = c_1 \vec{v_1} + c_2 \vec{v_2}+...+c_k \vec{v_k}$$ where $\vec{v}_i \in S$. Note that $$\sum_{i=1}^n c_i \vec{v_i}$$ will not usually be in $S$ even though $\vec{v}_i \in S$. \end{definition}
+\begin{definition} A \textbf{linear combination} of a set $S$ is a vector of the form $$\sum_{i=1}^n c_i \vec{v_i} = c_1 \vec{v_1} + c_2 \vec{v_2}+...+c_n \vec{v_n}$$ where $\vec{v}_i \in S$. Note that $$\sum_{i=1}^n c_i \vec{v_i}$$ will not usually be in $S$ even though $\vec{v}_i \in S$. \end{definition}
 
 \bq Can you write $\vec{b}=\colvec{2}{2}{4}$ as a linear combination of $\vec{v_1}=\colvec{2}{1}{1}$ and $\vec{v_2}=\colvec{2}{-1}{1}$? Justify your answer.
 \eq
@@ -530,7 +529,7 @@ If $A$ is a $m$ by $n$ matrix, $$A=\begin{bmatrix} a_{11} & a_{12} & ... &  a_{1
 \bq If $A$ is a $m$ by $n$ matrix, then $A\vec{x} \in \mathbb{R}^\diamondsuit$ for what value of $\diamondsuit$?
 \eq
 
-It should not surprise you that you can multiply a scalar multiple of a vector by a matrix by factoring out the scalar. In mathematical notation, $A (k \vec{v}) = k (A\vec{v})$. Additionally, you can apply the scalar multiplication to the matrix. In other words, $A (k \vec{v}) = k (A\vec{v}) = (kA)\vec{v}$. These kind of manipulations will be discussed more when we work with matrix operations later, but you may find these facts useful in your work right now.
+It should not surprise you that you can multiply a scalar multiple of a vector by a matrix by factoring out the scalar. In mathematical notation, $A (k \vec{v}) = k (A\vec{v})$. Additionally, you can apply the scalar multiplication to the matrix. In other words, $A (k \vec{v}) = k (A\vec{v}) = (kA)\vec{v}$. These kind of manipulations will be discussed more when we work with matrix operations later, but you may find these facts useful in your work right now. % There should either be a question asking students to write this up, or a reminder that students should take time to write out these details for themselves. FWIW, I don't think that the notes explicitly discuss the manipulations later. I found myself scrambling/backtracking a little to include verification of the scalar multiplication property mentioned here, $A(\vec{u}+\vec{v})=A\vec{u}+A\vec{v}$, and analogous properties for matrix-matrix products. 
 
 \bq
 \be
@@ -578,7 +577,7 @@ In this section, we will talk about efficient and clear ways to express the set 
 \end{annotation}
 \eq
 
-\bq\label{q4} Solve each of the following systems and present your solution set in parametric form.
+\bq\label{q4} Solve each of the following systems and present your solution set in parametric form. % I think I get what you're trying to do with parts a and b being the same, but students found it confusing
 \begin{enumerate}
 \item  $$ 3x_1-2x_2=0$$
 $$ 2x_1-2x_2=0 $$
@@ -606,11 +605,6 @@ A system of linear equations is \textbf{homogeneous} if the matrix form of the s
 \begin{definition} The \textbf{column space of a matrix} $A$, denoted $Col(A)$ is the set of vectors that can be written as a linear combination of the columns of $A$. If $A$ is $m$ by $n$, then $Col(A)=\{\vec{b} \in \mathbb{R}^m | A\vec{x} =\vec{b} \mbox{ for some } \vec{x} \in \mathbb{R}^n \}$.
 \end{definition}
 
-\begin{theorem} The pivot columns of a matrix $A$ generate $Col(A)$. This means that if $\vec{v} \in Col(A)$, then $\vec{v}$ can be written as a linear combination using only the pivot columns of $A$.
-\end{theorem}
-Note that this theorem uses the pivot columns of $A$ and \underline{\textbf{not}} the pivot columns of the \emph{echelon form} of $A$. Even though you need the echelon form to figure out which columns have pivots, you should use the appropriate columns of $A$ in your linear combination.
-
-
 \begin{definition} The \textbf{null space of a matrix}, denoted $Null(A)$, is the set of vectors that when multiplied by the matrix give the zero vector. In other words, $Null(A)$ is the solution set of the homogeneous equation $A\vec{x}=\vec{0}$.
 \end{definition}
 
@@ -623,6 +617,10 @@ Note that this theorem uses the pivot columns of $A$ and \underline{\textbf{not}
 \bq Let $$A=\begin{bmatrix} -3&6&-1&1&-7&0 \\1&-2&2&3&-1&0 \\2&-4&5&8&-8&0 \end{bmatrix}  \thicksim \begin{bmatrix} 1&-2&0&-1&0&0\\0&0&1&2&0&0 \\ 0&0&0&0&1&0 \end{bmatrix}$$
 What is the reduced row echelon form of $\begin{bmatrix} -3&-1&1 \\1&2&3 \\2&5&8\end{bmatrix}$? You should use the information given above and \textbf{not} a lot of calculations.
 \eq
+
+\begin{theorem} The pivot columns of a matrix $A$ generate $Col(A)$. This means that if $\vec{v} \in Col(A)$, then $\vec{v}$ can be written as a linear combination using only the pivot columns of $A$.
+\end{theorem}
+Note that this theorem uses the pivot columns of $A$ and \underline{\textbf{not}} the pivot columns of the \emph{echelon form} of $A$. Even though you need the echelon form to figure out which columns have pivots, you should use the appropriate columns of $A$ in your linear combination.
 
 \bq Let $$A=\begin{bmatrix} -3&6&-1&1&-7 \\1&-2&2&3&-1 \\2&-4&5&8&-8 \end{bmatrix} \thicksim \begin{bmatrix} 1&-2&0&-1&0\\0&0&1&2&0 \\ 0&0&0&0&1 \end{bmatrix}$$
 Describe $Col(A)$ and $Null(A)$ using a parametric form using as \underline{few} vectors as possible.
@@ -762,7 +760,7 @@ A matrix $A$ is \textbf{symmetric} if $A^T=A$.
 
 
 \subsection{Special Types of Matrices}
-A \textbf{square} matrix is a matrix that has the same number of rows and columns. A $m$ by $n$ matrix $A$ is said to be \textbf{upper triangular} if $A_{i,j}=0$ whenever $i>j$. Similarly, a matrix $A$ is \textbf{lower triangular} if $A_{i,j}=0$ whenever $i<j$. We usually consider square matrices when we talk about upper or lower triangular, but it may be helpful to consider non-square cases.
+A \textbf{square} matrix is a matrix that has the same number of rows and columns. A $m$ by $n$ matrix $A$ is said to be \textbf{upper triangular} if $A_{i,j}=0$ whenever $i>j$. Similarly, a matrix $A$ is \textbf{lower triangular} if $A_{i,j}=0$ whenever $i<j$. We usually consider square matrices when we talk about upper or lower triangular, but it may be helpful to consider non-square cases. % Is there a reason you don't set these out as numbered definitions?
 
 \bq Give an example of a matrix that is upper triangular but is not in echelon form. If one does not exist, explain why.
 \eq
@@ -779,7 +777,7 @@ A \textbf{square} matrix is a matrix that has the same number of rows and column
 \eq
 The $n$ by $n$ identity matrix, denoted $Id_n$, is the unique matrix such that $Id_n \vec{x}= \vec{x}$ for every $\vec{x} \in \mathbb{R}^n$. In fact the entries of $Id_n$ are easily computed in terms of the Dirac delta function. Specifically $(Id_n)_{i,j}=\delta_{i,j}$, where $$\delta_{i,j}=\left\{ \begin{array}{cc} 0 & \mbox{if }i\neq j\\ 1 & \mbox{if } i = j \end{array} \right. $$
 
-\bq Write out $Id_5$ and use it to prove that for any $\vec{v} \in \mathbb{R}^5$ the product of $Id_5$ and $\vec{v}$ will always be $\vec{v}$.
+\bq Write out $Id_5$ and use it to prove that for any $\vec{v} \in \mathbb{R}^5$ the product of $Id_5$ and $\vec{v}$ will always be $\vec{v}$. % Might consider including a student warning and/or instructor note: ``Watch out for order in the matrix-vector product.''
 \eq
 
 \bq \underline{Superstar Bonus Question:} Prove that $Id_5$ is the only matrix that has the property from the problem above.
@@ -869,7 +867,7 @@ For instance, if $B = \left[ \begin{array}{ccc} 1 & 2 \\
 
 Vector spaces are the primary objects that we study in linear algebra. Generally speaking, a vector space is a collection of objects (called vectors) that preserves linear relationships; that is, the objects work well under vector addition and scalar multiplication. As you will see shortly, vectors are not always going to be the column vectors of Chapter 1 or viewed geometrically as arrows from one point to another.
 \begin{annotation}
-\endnote{The point of this chapter is do Chapter 1 in an abstract setting. This means using vector spaces that are not $\mathbb{R}^n$ with increasing frequency.}
+\endnote{The point of this chapter is do Chapter 1 in an abstract setting. This means using vector spaces that are not $\mathbb{R}^n$ with increasing frequency.} % I think the utility of translating from an abstract vector space of dimension $n$ to $\mathbb{R}^n$ is missing from the notes. Instructors can pull it out, sure, but explicit prompting through questions would make a huge difference. When this isn't included, instructors have to 1) anticipate the need for them to pull out these ideas and 2) quickly come up with questions that fit the flow. I'll write
 \end{annotation}
 \begin{definition}
 A \textbf{vector space}, $V$, is a nonempty set of objects called \emph{vectors} with two operations called addition and scalar multiplication such that the following hold for all $\vec{u}, \vec{v}, \vec{w} \in V$ and $c,d \in \mathbb{R}$:
@@ -878,7 +876,7 @@ A \textbf{vector space}, $V$, is a nonempty set of objects called \emph{vectors}
 \item $\vec{u}+\vec{v}=\vec{v}+\vec{u}$
 \item $(\vec{u}+\vec{v})+\vec{w}=\vec{u}+(\vec{v}+\vec{w})$
 \item There exists a vector $\vec{0}$ such that $\vec{v}+\vec{0}=\vec{v}$
-\item For each $\vec{u} \in V$, there is a vector $-\vec{u}$ such that $\vec{u} + (-\vec{u})=\vec{0}$.
+\item For each $\vec{u} \in V$, there is a vector $-\vec{u}\in V$ such that $\vec{u} + (-\vec{u})=\vec{0}$.
 \item If $\vec{u} \in V$ and $c \in \mathbb{R}$, then $c\vec{u} \in V$.
 \item $c(\vec{u}+\vec{v})=c\vec{u}+c\vec{v}$
 \item $(c+d)\vec{v}=c\vec{v}+d\vec{v}$
@@ -985,7 +983,7 @@ The following sets are also vector spaces:
 As Question \ref{vse} shows, it can be very tedious to prove that a set is indeed a vector space. A \textbf{subspace} of a vector space is a subset that is itself a vector space. Since most of the properties of the vector spaces we look at get inherited from some larger vector space, it is often easier to show that a set is a vector space by showing it is a subspace of the appropriate parent vector space.
 
 \begin{theorem}
-A subset $H$ of a vector space $V$ is a subspace if and only if the following are true:
+A subset $H$ of a vector space $V$ is a subspace if and only if the following are true: % operations are assumed to be the same as in $V$
 \begin{enumerate}
 \item The zero vector of $V$ is in $H$; $\vec{0}_V \in H$.
 \item H is closed under vector addition; if $\vec{u}, \vec{v} \in H$, then $\vec{u}+\vec{v}\in H$.
@@ -1039,7 +1037,7 @@ This theorem is so useful because we can prove a set is a vector space by checki
 \end{annotation}
 
 \section{Span}
-Recall that a \textbf{linear combination} of the set $\{\vec{v_1},..\vec{v_k} \}$ is a vector of the form $$\sum_{i=1}^n c_i \vec{v_i} = c_1 \vec{v_1} + c_2 \vec{v_2}+...+c_k \vec{v_k}$$
+Recall that a \textbf{linear combination} of the set $\{\vec{v_1},..\vec{v_k} \}$ is a vector of the form $$\sum_{i=1}^k c_i \vec{v_i} = c_1 \vec{v_1} + c_2 \vec{v_2}+...+c_k \vec{v_k}$$
 Note that some of the $c_i$ may be zero. In other words, not every vector in a set needs to be part of a linear combination from that set.
 
 \bq Can you write $\vec{b}=\colvec{2}{2}{4}$ as a linear combination of $\vec{v_1}=\colvec{2}{1}{1}$ and $\vec{v_2}=\colvec{2}{-1}{1}$? Remember that you need to justify your work on every problem.

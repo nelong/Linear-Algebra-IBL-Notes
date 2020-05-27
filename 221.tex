@@ -1,0 +1,72 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcount\colveccount
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+\textbf{Question 221}: For each of the following vectors, compute $[\vec{v}]_{\beta}$ where $\beta =\{ 1+t,t+t^2,1+t^2 \}$
+\begin{enumerate}
+\item $\vec{v}=2+2t$
+\item $\vec{v}=4-t^2+t$
+\item $\vec{v}=3$
+\item $\vec{v}=t$
+\item $\vec{v}=6t^2$
+\end{enumerate}\newline
+\vspace{0.1in}
+\newline
+
+\textit{Method}:
+
+We compute the coordinates of the vectors in the standard basis for $\mathbb{P}_2$, $s=\{1,t,t^2\}$, relative to the new basis $\beta =\{ 1+t,t+t^2,1+t^2 \}$: $$[1]_{\beta}=\colvec{3}{\frac{1}{2}}{-\frac{1}{2}}{\frac{1}{2}},\qquad [t]_{\beta}=\colvec{3}{\frac{1}{2}}{\frac{1}{2}}{-\frac{1}{2}},\qquad [t^2]_{\beta}=\colvec{3}{-\frac{1}{2}}{\frac{1}{2}}{\frac{1}{2}}$$ So, we make the change-of-basis matrix $$B=\begin{bmatrix} \frac{1}{2} & \frac{1}{2} & -\frac{1}{2} \\
+-\frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} & \frac{1}{2} \end{bmatrix}$$
+
+\begin{enumerate}
+\item We compute $$B[\Vec{v}]_s=\begin{bmatrix} \frac{1}{2} & \frac{1}{2} & -\frac{1}{2} \\
+-\frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} & \frac{1}{2} \end{bmatrix}\colvec{3}{2}{2}{0}=\colvec{3}{2}{0}{0},$$ which is accurate since $\Vec{v}=2(1+t)$
+\item $$B[\Vec{v}]_s=\begin{bmatrix} \frac{1}{2} & \frac{1}{2} & -\frac{1}{2} \\
+-\frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} & \frac{1}{2} \end{bmatrix}\colvec{3}{4}{1}{-1}=\colvec{3}{3}{-2}{1},$$ which is accurate since $\vec{v}=3(1+t)-2(t+t^2)+1(1+t^2)$
+\item  $$B[\Vec{v}]_s=\begin{bmatrix} \frac{1}{2} & \frac{1}{2} & -\frac{1}{2} \\
+-\frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} & \frac{1}{2} \end{bmatrix}\colvec{3}{3}{0}{0}=\colvec{3}{\frac{3}{2}}{-\frac{3}{2}}{\frac{3}{2}},$$ which is accurate since $3=\frac{3}{2}(1+t)-\frac{3}{2}(t+t^2)+\frac{3}{2}(1+t^2)$
+\item  $$B[\Vec{v}]_s=\begin{bmatrix} \frac{1}{2} & \frac{1}{2} & -\frac{1}{2} \\
+-\frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} & \frac{1}{2} \end{bmatrix}\colvec{3}{0}{1}{0}=\colvec{3}{\frac{1}{2}}{\frac{1}{2}}{-\frac{1}{2}},$$ which is accurate since $t=\frac{1}{2}(1+t)+\frac{1}{2}(t+t^2)-\frac{1}{2}(1+t^2)$
+\item $$B[\Vec{v}]_s=\begin{bmatrix} \frac{1}{2} & \frac{1}{2} & -\frac{1}{2} \\
+-\frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} & \frac{1}{2} \end{bmatrix}\colvec{3}{0}{0}{6}=\colvec{3}{-3}{3}{3},$$ which is accurate since $6t^2=-3(1+t)+3(t+t^2)+3(1+t^2)$
+\end{enumerate}
+
+\end{document}

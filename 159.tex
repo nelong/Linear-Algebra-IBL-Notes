@@ -1,0 +1,51 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+
+\textbf{Question 159}: Prove that if $S$ is a linearly dependent set, then any $\Vec{w}\in span(S)$ can be written as a linear combination from $S$ in more than one way.\newline
+\vspace{0.2in}
+\newline
+
+\textit{Proof}: Let $S=\{\Vec{v_1},\Vec{v_2},\ldots,\Vec{v_k}\}$ be a linearly dependent set and $\Vec{w}\in span(S)$. We will show that there are two distinct linear combinations of the vectors in $S$ that equal $\Vec{w}$.
+
+Now, since $\Vec{w}\in span(S),$ there exist scalars $c_1,...,c_k\in\mathbb{R}$ such that $$\Vec{w}=\sum_{i=1}^k c_i\Vec{v_i}.$$
+
+Since $S$ is linearly dependent, there exists a nontrivial linear combination of its vectors equals the zero vector: $$\Vec{0}=\sum_{i=1}^k b_i\Vec{v_i},$$ where $b_j\neq 0$ for some $1\leq j\leq k$. Therefore, by definition of the zero vector, we have $$\Vec{w}=\Vec{w}+\Vec{0}=\sum_{i=1}^k c_i\Vec{v_i} + \sum_{i=1}^k b_i\Vec{v_i}=\sum_{i=1}^k (c_i+b_i)\Vec{v_i}.$$ Since there exists $j$, $1\leq j\leq k$, such that $b_j\neq 0$, it follows that the coefficient $c_j+b_j\neq c_j$ and therefore the linear combinations $$\sum_{i=1}^k c_i\Vec{v_i} \qquad\text{ and }\qquad \sum_{i=1}^k (c_i+b_i)\Vec{v_i}$$ are distinct. \qedsymbol
+\end{document}

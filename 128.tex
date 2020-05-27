@@ -1,0 +1,56 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+% \textbf{Theorem 115}: A subset $H$ of a vector space $V$ is a subspace if and only if the following are true:
+% \begin{enumerate}[label=(\alph*)]
+%     \item The zero vector of $V$ is in $H$; $\Vec{0}_V\in H$
+%     \item $H$ is closed under vector addition; if $\Vec{u}$, $\Vec{v}\in H$, then $\Vec{u}+\Vec{v}\in H$
+%     \item $H$ is closed under scalar multiplication; if $\Vec{u}$ and $c\in\mathbb{R}$, then $c\Vec{u}\in H$
+% \end{enumerate}\newline
+% \vspace{0.2in}
+% \newline
+% Note: the implication is that $H$ is a vector space under the same the operations of vector addition and scalar multiplication as $V$.\newline
+% \vspace{0.2in}
+% \newline
+
+\textbf{Question 128}: The set of quadratic polynomials of the form $at^2+b$ is a subspace of the space of polynomials, $\mathbb{P}$.\newline
+\vspace{0.2in}
+\newline
+
+\textit{Proof}: Let $H=\{at^2+b|a,b,\in\mathbb{R}\}$ and recall that $$\mathbb{P}=\left\{\sum_{i=0}^n a_it^i|n\in\mathbb{N}\cup\{0\},a_i\in\mathbb{R},0\leq i\leq n\right\},$$ the set of all polynomials with real coefficients. We want to show that $H$ is a subspace of $\mathbb{P}$.
+
+We will use Theorem 115. Notice that any $f(t)\in H$ is clearly an element of $\mathbb{P}$ by definition of the sets, so $H$ is  a subset of $\mathbb{P}$. Therefore, it suffices to show that $\Vec{0}_{\mathbb{P}}\in H$, that $H$ is closed under vector addition, and that $H$ is closed under scalar multiplication. 
+
+By example theorem 112a, $\Vec{0}_{\mathbb{P}}$ is the polynomial $g(t)=0$. Since $n\in\mathbb{N}\cup\{0\}$ and $deg(g)=0$, $g(t)\in\mathbb{P}_n$ by definition.
+
+By theorem question 111, $\mathbb{P}_n$ is a vector space. Therefore, by condition (a) of definition 103, $\mathbb{P}_n$ is closed under vector addition. By condition (f) of definition 103, $\mathbb{P}_n$ is closed under scalar multiplication. Therefore, by theorem 115, $\mathbb{P}_n$ is a subspace of $\mathbb{P}$.
+\end{document}

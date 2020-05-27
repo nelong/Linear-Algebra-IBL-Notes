@@ -1,0 +1,65 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+
+\textbf{Question 204}: Recall that the set $\{\Vec{0}\}$ is the trivial vector space. What is a basis for $\{\Vec{0}\}$? What is $dim(\{\Vec{0}\})$?\newline
+\vspace{0.1in}
+\newline
+
+\textit{Basis}: By definition 195, a basis must be a linearly independent. We claim that $c\Vec{0}=\Vec{0}$ for all $c\in\mathbb{R}$: \newline
+\vspace{0.1in}
+\newline
+
+\textbf{Claim}: For any vector space $V$ and any scalar $c\in\mathbb{R}$, $c\Vec{0}=\Vec{0}$.\newline
+\vspace{0.1in}
+\newline
+
+\textit{Proof of claim}: Let $c\in\mathbb{R}$ and $\Vec{v}$ be a vector in the vector space $V$. Notice that $V$ must contain at least one vector, since the definition of vector space requires the existence of a zero vector. We have previously shown that $0\Vec{v}=\Vec{0}$. By vector space properties,  $$\Vec{0}=0\Vec{v}=(1+(-1))\Vec{v}=1\Vec{v}+(-1)\Vec{v}=\Vec{v}+(-1)\Vec{v}.$$ Therefore $-\Vec{v}=(-1)\Vec{v}$. That is, the additive inverse of the vector $\Vec{v}$ is equal to the product of the scalar $-1$ and $\Vec{v}$. Therefore 
+$$c\Vec{0}=c[\Vec{v}+(-\Vec{v})]=c\Vec{v}+c(-\Vec{v})=c\Vec{v}+c[(-1)\Vec{v}]=c\Vec{v}+[c(-1)]\Vec{v}=[c+c(-1)]\Vec{v}=[1\cdot c+(-1)c]\Vec{v}=[[1+(-1)]c]\Vec{v}=[0c]\Vec{v}=0\cdot\Vec{v}=\Vec{0},$$ as desired.
+\vspace{0.1in}
+\newline
+
+Returning to the question of a basis for the trivial vector space, it follows from the claim above that $\{\Vec{0}\}$ is a linearly dependent set. Therefore, the only linearly independent subset of $\{\Vec{0}\}$ is the empty set. 
+
+The argument for $span(\emptyset)=\{\Vec{0}\}$ is more difficult to justify, but it is defined in this way. So $\emptyset$ is a basis for $\{\Vec{0}\}$.
+
+\textit{Dimension}: Since the number of elements in $\emptyset$ is zero, the dimension of the vector space $\{\Vec{0}\}$ is 0.
+
+\end{document}

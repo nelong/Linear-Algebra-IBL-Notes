@@ -1,0 +1,74 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcount\colveccount
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+\textbf{Question 162}: Prove that the map $T:\mathbb{R}^n\to\mathbb{R}^m$ given by $T(\Vec{x})=A\Vec{x}$ is linear, where $A$ is an $m\times n$ real-valued matrix.\newline
+\vspace{0.1in}
+\newline
+
+\textit{Proof}: Let $A$ be an $m\times n$ real-valued matrix, $\Vec{x}$ an element of the vector space $\mathbb{R}^n$, and define the function $T(\Vec{x})=A\Vec{x})$. Notice that the matrix-vector product $A\Vec{x}$ is defined and that this vector is an element of the vector space $\mathbb{R}^m$. 
+
+In order to show that $T$ is a linear transformation, we must show that for every $\vec{u},\vec{v} \in\mathbb{R}^n$ and $c \in \mathbb{R}$, $T(\vec{u}+\vec{v})=T(\vec{u})+T(\vec{v})$ and $T(c\vec{u})=c T(\vec{u})$.
+
+Write $$A=\begin{bmatrix} a_{11} & a_{12} & ... &  a_{1n} \\
+  a_{21}& a_{22}& ... &  a_{2n} \\
+  \vdots  & \vdots &   &  \vdots   \\
+  a_{m1}& a_{m2} & ... &  a_{mn}  \end{bmatrix}$$
+
+To verify the first (additive) condition, consider  $\vec{u}=\colvec{4}{u_1}{u_2}{\vdots}{u_n}, \vec{v}=\colvec{4}{v_1}{v_2}{\vdots}{v_n} \in \mathbb{R}^n$. Then $$A\vec{u}+A\vec{v} = \left(u_1 \colvec{4}{a_{11}}{a_{21}}{\vdots}{a_{m1}}+u_2 \colvec{4}{a_{12}}{a_{22}}{\vdots}{a_{m2}}+ \cdots u_n \colvec{4}{a_{1n}}{a_{2n}}{\vdots}{a_{mn}}\right) + \left(v_1 \colvec{4}{a_{11}}{a_{21}}{\vdots}{a_{m1}}+v_2 \colvec{4}{a_{12}}{a_{22}}{\vdots}{a_{m2}}+ \cdots v_n \colvec{4}{a_{1n}}{a_{2n}}{\vdots}{a_{mn}}\right)$$
+
+$$ = (u_1+v_1) \colvec{4}{a_{11}}{a_{21}}{\vdots}{a_{m1}}+(u_2+v_2) \colvec{4}{a_{12}}{a_{22}}{\vdots}{a_{m2}}+ \cdots (u_n+v_n) \colvec{4}{a_{1n}}{a_{2n}}{\vdots}{a_{mn}}$$
+
+$$=\begin{bmatrix} a_{11} & a_{12} & ... &  a_{1n} \\
+  a_{21}& a_{22}& ... &  a_{2n} \\
+  \vdots  & \vdots &   &  \vdots   \\
+  a_{m1}& a_{m2} & ... &  a_{mn}  \end{bmatrix}\colvec{4}{u_1+v_1}{u_2+v_2}{\vdots}{u_n+v_n}$$
+  
+$$ = A(\Vec{u}+\Vec{v})$$
+
+Therefore $T(\vec{u}+\vec{v})=T(\vec{u})+T(\vec{v})$, as desired.
+
+To verify the second (multiplicative) condition, observe that $$A(c\Vec{u})=A\left(c\colvec{4}{u_1}{u_2}{\vdots}{u_n}\right)=A\left(\colvec{4}{cu_1}{cu_2}{\vdots}{cu_n}\right)=\left(cu_1 \colvec{4}{a_{11}}{a_{21}}{\vdots}{a_{m1}}+cu_2 \colvec{4}{a_{12}}{a_{22}}{\vdots}{a_{m2}}+ \cdots cu_n \colvec{4}{a_{1n}}{a_{2n}}{\vdots}{a_{mn}}\right)$$ 
+$$=c\left[\left(u_1 \colvec{4}{a_{11}}{a_{21}}{\vdots}{a_{m1}}+u_2 \colvec{4}{a_{12}}{a_{22}}{\vdots}{a_{m2}}+ \cdots u_n \colvec{4}{a_{1n}}{a_{2n}}{\vdots}{a_{mn}}\right)\right]=c\cdot A\Vec{u}$$
+
+Therefore $T(c\vec{u})=c T(\vec{u})$, as desired. 
+
+\end{document}

@@ -1,0 +1,96 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+\textbf{Theorem 115}: A subset $H$ of a vector space $V$ is a subspace if and only if the following are true:
+\begin{enumerate}[label=(\alph*)]
+    \item The zero vector of $V$ is in $H$; $\Vec{0}_V\in H$
+    \item $H$ is closed under vector addition; if $\Vec{u}$, $\Vec{v}\in H$, then $\Vec{u}+\Vec{v}\in H$
+    \item $H$ is closed under scalar multiplication; if $\Vec{u}$ and $c\in\mathbb{R}$, then $c\Vec{u}\in H$
+\end{enumerate}\newline
+\vspace{0.2in}
+\newline
+Note: the implication is that $H$ is a vector space under the same the operations of vector addition and scalar multiplication as $V$.\newline
+\vspace{0.2in}
+\newline
+\textit{Proof}: Let $V$ be a vector space and $H\subseteq V$ such that $\Vec{0}_V\in H$, $H$ is closed under vector addition, and $H$ is closed under scalar multiplication.  In order to verify that $H$ is a vector space, we must show that $H$ satisfies the conditions of definition 103. Let $\Vec{u}, \Vec{v}, \Vec{w}\in H$ and $c, d\in\mathbb{R}$. 
+
+\begin{enumerate}[label=(\alph*)]
+    \item Closure of vector addition: this holds by assumption.
+    
+    \item Commutativity of vector addition: if $\Vec{u}, \Vec{v}\in H$, then $\Vec{u}, \Vec{v}\in V$ because $H\subseteq V$. Therefore, $\Vec{u}+\Vec{v}=\Vec{v}+ \Vec{u}$ as desired. 
+    
+    \item Associativity of vector addition: if $\Vec{u}, \Vec{v}, \Vec{w}\in H$, then $\Vec{u}, \Vec{v}, \Vec{w}\in V$, since $H\subseteq V$. Therefore $(\Vec{u}+\Vec{v})+\Vec{w}=\Vec{u}+(\Vec{v}+\Vec{w}),$ as desired.
+    
+    \item Existence of the zero vector: by assumption, $\Vec{0}_V\in H$. For any $\Vec{u}\in H$, then $\Vec{u}\in V$, since $H\subseteq V$. Therefore, $\Vec{u}+\Vec{0}_V=\Vec{u}$ and $H$ contains the required element.\footnote{We can conclude that $\Vec{0}_H=\Vec{0}_V$.} 
+    
+    \item Existence of the additive inverse: we must show that, for each $\Vec{u}\in H,$ there exists $-\Vec{u}\in H$ so that $\Vec{u}+(-\Vec{u})=\Vec{0}_V$. \newline
+    Now, if $\Vec{u}\in H$, then $\Vec{u}\in V$, since $H\subseteq V$. By vector space properties of $V$, we have $$\Vec{u}=1\Vec{u}=(1+0)\Vec{u}=1\Vec{u}+0\Vec{u}=\Vec{u}+0\Vec{u}.$$ 
+    Since $V$ is a vector space and $\Vec{u}\in V,$ we have $-\Vec{u}\in V$. Again, by properties of the vector space V, $$\Vec{0}_V=(-\Vec{u})+\Vec{u}=(-\Vec{u})+[\Vec{u}+0\Vec{u}]=[(-\Vec{u})+\Vec{u}]+0\Vec{u}=\Vec{0}_V+0\Vec{u}=0\Vec{u}.$$
+    Finally, $$\Vec{0}_V=0\Vec{u}=(1+(-1))\Vec{u}=1\Vec{u}+(-1)\Vec{u}=\Vec{u}+(-1)\Vec{u}.$$
+    By closure of $H$ under scalar multiplication, $(-1)\Vec{u}\in H$. Therefore, the necessary element $-\Vec{u}=(-1)\Vec{u}$ exists in $H$ and the property is satisfied. 
+    
+    \item Closure of scalar multiplication: this holds by assumption.
+    
+    \item Distributive property of scalar multiplication across vector addition: if $\Vec{u},\Vec{v}\in H$, then $\Vec{u},\Vec{v}\in V$, since $H\subseteq V$. Therefore $c(\Vec{u}+\Vec{v})=c\Vec{u}+c\Vec{v}$ for $c\in\mathbb{R},$ as desired. 
+    
+    \item Distributive property of scalar addition across scalar multiplication (of a vector): if $\Vec{u}\in H$, then $\Vec{u}\in V$, since $H\subseteq V$. Therefore $(c+d)u=cu+du$ for $c,d\in\mathbb{R},$ as desired.
+    
+    \item Associativity of scalar multiplication: if $\Vec{u}\in H$, then $\Vec{u}\in V$, since $H\subseteq V$. Therefore $c(d\Vec{u})=(cd)\Vec{u}$ for $c,d\in\mathbb{R},$ as desired.
+    
+    \item Existence of scalar multiplicative identity: if $\Vec{u}\in H$, then $\Vec{u}\in V$, since $H\subseteq V$. Therefore $1\Vec{u}=\Vec{u},$ as desired. 
+\end{enumerate}
+
+Since all conditions of the vector space definition are satisfied, $H$ is a vector space.\newline
+\vspace{0.2in}
+\newline
+
+For the converse, if $H\subseteq V$ is a vector space, then conditions (a), (b), and (c) of the theorem statement follow from vector space properties of $H$ and $V$. 
+
+\begin{enumerate}[label=(\alph*)]
+    \item We must show that the zero vector of $V$, $\Vec{0}_V,$ is an element of $H$. Since $H$ is a vector space, it contains a zero element, $\Vec{0}_H$, and so $\Vec{u}+\Vec{0}_H=\Vec{u}$. Therefore, $\Vec{u}+\Vec{0}_V=\Vec{u}=\Vec{u}+\Vec{0}_H$. But since $H\subseteq V,$ $\Vec{u}\in V$, and $\Vec{u}$ has an additive inverse $-\Vec{u}\in V$. Substituting, we have
+    $$(-\Vec{u})+[\Vec{u}+\Vec{0}_V]=(-\Vec{u})+[\Vec{u}+\Vec{0}_H]$$
+    $$[(-\Vec{u})+\Vec{u}]+\Vec{0}_V=[(-\Vec{u})+\Vec{u}]+\Vec{0}_H$$
+    $$\Vec{0}_V+\Vec{0}_V=\Vec{0}_V+\Vec{0}_H$$
+    $$\Vec{0}_V=\Vec{0}_V+\Vec{0}_H$$
+    Since $\Vec{0}_H\in V$, $\Vec{0}_V+\Vec{0}_H=\Vec{0}_H$ by definition of zero vector in $V$. Therefore 
+    $$\Vec{0}_V=\Vec{0}_H$$ and $\Vec{0}_V\in H$ as desired. 
+    \item We must show that $H$ is closed under vector addition. That is, if $\Vec{u}$, $\Vec{v}\in H$, then $\Vec{u}+\Vec{v}\in H$; this follows directly from property (a) of definition 103. 
+    \item We must show that $H$ is closed under scalar multiplication. That is, if $\Vec{u}$ and $c\in\mathbb{R}$, then $c\Vec{u}\in H$; this follows directly from property (f) of definition 103. 
+\end{enumerate}
+
+Therefore, $H\subseteq V$ is a subspace of $V$ if and only if \begin{enumerate}[label=(\alph*)]
+    \item The zero vector of $V$ is in $H$; $\Vec{0}_V\in H$
+    \item $H$ is closed under vector addition; if $\Vec{u}$, $\Vec{v}\in H$, then $\Vec{u}+\Vec{v}\in H$
+    \item $H$ is closed under scalar multiplication; if $\Vec{u}$ and $c\in\mathbb{R}$, then $c\Vec{u}\in H$.
+\end{enumerate}
+
+\end{document}

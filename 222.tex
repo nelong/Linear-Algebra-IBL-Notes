@@ -1,0 +1,66 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcount\colveccount
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+\textbf{Question 222}: For each of the following vectors, compute $[\vec{v}]_{\beta}$ where $\beta =\left\{ \begin{bmatrix} 1 & 2 \\
+3 & 4 \end{bmatrix}, \begin{bmatrix} 1 & 0 \\
+0 & 1 \end{bmatrix}, \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}, \begin{bmatrix} 1 & 0 \\
+0 & 0 \end{bmatrix} \right\}$
+\begin{enumerate}
+\item $\vec{v}=\begin{bmatrix} 1 & 1 \\
+1 & 1 \end{bmatrix}$
+\item $\vec{v}=\begin{bmatrix} 1 & 0 \\
+1 & 1 \end{bmatrix}$
+\end{enumerate}\newline
+\vspace{0.1in}
+\newline
+
+
+
+\begin{enumerate}
+\item $[\Vec{v}]_{\beta}=\colvec{4}{0}{1}{1}{0}$
+\item $[\Vec{v}]_{\beta}=\colvec{4}{1}{-3}{-2}{3}$
+\end{enumerate}
+
+\end{document}
+
+\begin{bmatrix} \frac{1}{2} & \frac{1}{2} & -\frac{1}{2} \\
+-\frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} & \frac{1}{2} \end{bmatrix}\colvec{3}{0}{0}{6}

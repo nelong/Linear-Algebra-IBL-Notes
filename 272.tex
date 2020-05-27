@@ -1,0 +1,76 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcount\colveccount
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+
+\textbf{Question 272:} Let $A$ be an $n\times n$ matrix. Prove that a nonzero vector, $\Vec{v}$, is an eigenvector of $A$ with eigenvalue $\lambda$ if and only if $\vec{v}$ is in the null space of $A-\lambda Id_{n}$.\newline
+\vspace{0.1in}
+\newline
+
+\textit{Proof}:  Let $A$ be a square matrix and $\Vec{v}$ a nonzero vector in $\mathbb{R}^n$. We will prove this biconditional statement by proving the statements ``If $\Vec{v}$ is an eigenvector of $A$ with eigenvalue $\lambda$, then $\Vec{v}$ is in the null space of $A-\lambda Id_{n}$,'' and ``If $\Vec{v}$ is in the null space of $A-\lambda Id_{n}$, then $\Vec{v}$ is an eigenvector of $A$ with eigenvalue $\lambda$. Write $$A=\begin{bmatrix} a_{11} & a_{12} & ... &  a_{1n} \\
+  a_{21}& a_{22}& ... &  a_{2n} \\
+  \vdots  & \vdots &   &  \vdots   \\
+  a_{m1}& a_{m2} & ... &  a_{mn}  \end{bmatrix}\qquad\text{ and }\qquad\Vec{v}=\colvec{4}{v_1}{v_2}{\vdots}{v_n}$$
+We begin by proving the second statement. 
+
+Assume that $\Vec{v}=\colvec{4}{v_1}{v_2}{\vdots}{v_n}$ is in the null space of $A-\lambda Id_{n}$. By definition of null space, we have $$(A-\lambda Id_{n})\Vec{v}=\Vec{0}$$ By properties of the matrix-vector product, we have $$A\Vec{v}-(\lambda Id_{n})\Vec{v}=\Vec{0}$$ Notice that 
+
+$$(\lambda Id_n)\Vec{v}=\left(\lambda\begin{bmatrix} 1 & 0 & ... &  0 \\
+  0 & 1 & ... &  0 \\
+  \vdots  & \vdots &   &  \vdots   \\
+  0 & 0 & ... & 1  \end{bmatrix}\right)\Vec{v}=\begin{bmatrix} \lambda & 0 & ... &  0 \\
+  0 & \lambda & ... &  0 \\
+  \vdots  & \vdots &   &  \vdots   \\
+  0 & 0 & ... & \lambda  \end{bmatrix}\colvec{4}{v_1}{v_2}{\vdots}{v_n}=\colvec{4}{\lambda v_1}{\lambda v_2}{\vdots}{\lambda v_n}=\lambda\colvec{4}{v_1}{v_2}{\vdots}{v_n}=\lambda\Vec{v} $$
+  
+and so 
+
+$$A\Vec{v}-\lambda\Vec{v}=\colvec{4}{v_1 a_{11}+v_2 a_{12}+\cdots+v_n a_{1n}}{{v_1 a_{21}+v_2 a_{22}+\cdots+v_n a_{2n}}}{\vdots}{v_1 a_{n1}+v_2 a_{n2}+\cdots+v_n a_{nn}}-\colvec{4}{\lambda v_1}{\lambda v_2}{\vdots}{\lambda v_n}=\colvec{4}{v_1 a_{11}+v_2 a_{12}+\cdots+v_n a_{1n}-\lambda v_1}{{v_1 a_{21}+v_2 a_{22}+\cdots+v_n a_{2n}}-\lambda v_2}{\vdots}{v_1 a_{n1}+v_2 a_{n2}+\cdots+v_n a_{nn}\lambda v_n}=\colvec{4}{0}{0}{\vdots}{0}.$$
+
+By definition of vector equality, for $1\leq i\leq n$, $$(v_1 a_{i1}+v_2 a_{i2}+\cdots+v_n a_{in})-\lambda v_i=0,\text{ and}$$ $$(v_1 a_{i1}+v_2 a_{i2}+\cdots+v_n a_{in})=\lambda v_i.$$
+
+Again by definition of vector equality, $$A\Vec{v}=\colvec{4}{v_1 a_{11}+v_2 a_{12}+\cdots+v_n a_{1n}}{{v_1 a_{21}+v_2 a_{22}+\cdots+v_n a_{2n}}}{\vdots}{v_1 a_{n1}+v_2 a_{n2}+\cdots+v_n a_{nn}}=\colvec{4}{\lambda v_1}{\lambda v_2}{\vdots}{\lambda v_n}=\lambda\Vec{v}.$$
+
+So $\Vec{v}$ is an eigenvector of $A$ with eigenvalue $\lambda$, as desired.
+
+We now prove the first statement, with fewer details presented. Assume that $\Vec{v}$ is an eigenvector of $A$ with eigenvalue $\lambda$. We will show that $\Vec{v}$ is an element of the null space of $A\lambda Id_n$. By assumption, $A\Vec{v}=\lambda\Vec{v}.$ Above, we showed that $\lambda\Vec{v}=(\lambda Id_n)\Vec{v}$, so $A\Vec{v}=(\lambda Id_n)\Vec{v}$ and consequently $A\Vec{v}-(\lambda Id_n)\Vec{v}=\Vec{0}$. It follows that $(A-\lambda Id_n)\Vec{v}=\Vec{0}.$ Therefore, $\Vec{v}$ is in the null space of $A-\lambda Id_n$ by definition and the theorem statement is true. 
+
+\end{document}

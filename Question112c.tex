@@ -1,0 +1,65 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+\textbf{Theorem 112c}: The set $\{\Vec{0}\}$ which contains just one vector, the zero vector, is a vector space. \newline
+\vspace{0.2in}
+\newline
+\textit{Proof}: By definition, the set $\{\Vec{0}\}$ contains the zero vector, which is the vector that satisfies condition $(d)$ of the definition of vector space (definition 103). That is, the sum of $\Vec{0}$ with any vector from the set, say $\Vec{u}$, is $\Vec{u}$. The operation of scalar multiplication is defined in the standard way, so that for all $c\in\mathbb{R}$, $c\Vec{0}=\Vec{0}$. In order to verify that $\{\Vec{0}\}$ is a vector space, we now proceed to show that all of the conditions of definition 103 are satisfied.
+
+\begin{enumerate}[label=(\alph*)]
+    \item Closure of vector addition: we must show that the sum of two arbitrary elements $\Vec{u}$ and $v$ in $\{\Vec{0}\}$ is an element of $\{\Vec{0}\}$. Now, if $\Vec{u}\in\{\Vec{0}\}$, then $\Vec{u}=\Vec{0}$ and if $\Vec{v}\in\{\Vec{0}\}$, then $\Vec{v}=\Vec{0}$. So
+    $$\Vec{u}+\Vec{v}=\Vec{0}+\Vec{0}=\Vec{0}$$
+   by definition of the zero vector. Therefore $\Vec{u}+\Vec{v}$ is an element of $\{\Vec{0}\}$ and closure under vector addition holds.
+    
+    \item Commutativity of vector addition: we must show that, for arbitrary vectors $\Vec{u}$ and $\Vec{v}$, $\Vec{u}+\Vec{v}=\Vec{v}+\Vec{u}$. Since $\Vec{u}+\Vec{v}=\Vec{0}$ and $\Vec{v}+\Vec{u}=\Vec{0}$, we know that $\Vec{u}+\Vec{v}=\Vec{v}+\Vec{u},$ as desired.
+    
+    \item Associativity of vector addition: we must show that, for arbitrary vectors $\Vec{u}$, $\Vec{v}$, and $\Vec{w}$ in $\{\Vec{0}\}$, $(\Vec{u}+\Vec{v})+\Vec{w}=\Vec{u}+(\Vec{v}+\Vec{w}).$ Now, since $\Vec{u}=\Vec{v}=\Vec{w}=\Vec{0}$, 
+    $$(\Vec{u}+\Vec{v})+\Vec{w}=(\Vec{0}+\Vec{0})+\Vec{0}=\Vec{0}+\Vec{0}=\Vec{0}$$ by definition of the zero vector, and, similarly, $$\Vec{u}+(\Vec{v}+\Vec{w})=\Vec{0}+(\Vec{0}+\Vec{0})=\Vec{0}+\Vec{0}=\Vec{0}.$$ Therefore $(\Vec{u}+\Vec{v})+\Vec{w}=\Vec{u}+(\Vec{v}+\Vec{w}),$ as desired.
+    
+    \item Existence of the zero vector: this condition is satisfied by assumption. 
+    
+    \item Existence of the additive inverse: we must show that, for each $\Vec{u}\in\{\Vec{0}\},$ there exists $-\Vec{u}\in\{\Vec{0}\}$ so that $\Vec{u}+(-\Vec{u})=\Vec{0}$. Notice that $\Vec{u}=\Vec{0}$ and $\Vec{0}+\Vec{0}=\Vec{0}$, so $-\Vec{u}=\Vec{0},$ which is an element of $\{\Vec{0}\}$ and the condition is satisfied. 
+    
+    \item Closure of scalar multiplication: we must show that, for an arbitrary element $\Vec{u}\in\{\Vec{0}\}$ and an arbitrary scalar $c\in\mathbb{R}$, $c\Vec{u}\in\{\Vec{0}\}$. Now, by the definition of scalar multiplication, we have $c\Vec{0}=\Vec{0}$, which is clearly an element of $\{\Vec{0}\}$. Therefore, the condition is satisfied. 
+    
+    \item Distributive property of scalar multiplication across vector addition: We must show that $c(\Vec{u}+\Vec{v})=c\Vec{u}+c\Vec{v}$ for an arbitrary scalar $c\in\mathbb{R}$ and arbitrary $\Vec{u},\Vec{v}\in\{\Vec{0}\}$. Now, $$c(\Vec{u}+\Vec{v})=c(\Vec{0}+\Vec{0})=c(\Vec{0})=\Vec{0}$$ and $$c\Vec{u}+c\Vec{v}=c\Vec{0}+c\Vec{0}=\Vec{0}+\Vec{0}=\Vec{0}.$$ So $c(\Vec{u}+\Vec{v})=c\Vec{u}+c\Vec{v}$ as desired. 
+    
+    \item Distributive property of scalar addition across scalar multiplication (of a vector): we must show that $(c+d)\Vec{u}=c\Vec{u}+d\Vec{u}$ for arbitrary scalars $c,d\in\mathbb{R}$ and an arbitrary element $\Vec{u}\in\{\Vec{0}\}$. Now, $(c+d)\Vec{u}=(c+d)\Vec{0}$. Since the real numbers are closed under addition, $c+d\in\mathbb{R}$. Therefore, by definition of scalar multiplication, we have $(c+d)\Vec{0}=\Vec{0}$. Also by definition of scalar multiplication, $$c\Vec{u}+d\Vec{u}=c\Vec{0}+d\Vec{0}=\Vec{0}+\Vec{0}=\Vec{0}.$$ Therefore $(c+d)\Vec{u}=c\Vec{u}+d\Vec{u}$, as desired. 
+    
+    \item Associativity of scalar multiplication: we must show that $c(d\Vec{u})=(cd)\Vec{u}$ for arbitrary scalars $c,d\in\mathbb{R}$ and an arbitrary element $\Vec{u}\in\{\Vec{0}\}$. Now, $$c(d\Vec{u})=c(d\Vec{u})=c(d\Vec{0})=c\Vec{0}=\Vec{0}$$ by definition of scalar multiplication. Since the real numbers are closed under multiplication, $cd\in\mathbb{R}$. Again by definition of scalar multiplication, $(cd)\Vec{u}=(cd)\Vec{0}=\Vec{0}$. Therefore, $c(d\Vec{u})=(cd)\Vec{u}$, as desired. 
+    
+    \item Existence of scalar multiplicative identity: recall that 1 is the multiplicative identity in the real numbers. For an element $\Vec{u}\in\{\Vec{0}\},$ we have $$1\Vec{u}=1\Vec{0}=\Vec{0}=\Vec{u}$$ Therefore 1 is also the scalar multiplicative identity for $\{\Vec{0}\}$ as a real vector space.
+\end{enumerate}
+
+Since all conditions of the vector space definition are satisfied, $\{\Vec{0}\}$ is a real vector space.
+
+\end{document}
