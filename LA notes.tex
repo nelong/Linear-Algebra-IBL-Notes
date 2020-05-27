@@ -463,7 +463,7 @@ Plotting the equations, $3x-2y-z=0$, $2x+y+z=10$, and $x+4y+3z=20$ in red, yello
 \bq For each of the systems in Question \ref{q3}, use Sage to draw a plot of each of the equations in the system and write a sentence for each system about why the plot and your answer to Question \ref{q3} make sense.
 \eq
 
-If you remember parametric equations of lines and planes in space from multivariable calculus, then we will return to those ideas in Section \ref{s1}.
+We will return to the idea of parametric equations of lines and planes in space, which you may remember from multivariable calculus, in Section \ref{s1}.
 
 \section{Vector and Matrix Equations}
 Recall that two vectors in $\mathbb{R}^n$ are equal if and only if all of their components are equal.
@@ -504,7 +504,7 @@ $$x_1 \colvec{2}{1}{1}+x_2 \colvec{2}{-1}{1} = \colvec{2}{3}{-4}$$
 \bq Give an example of a vector $\colvec{3}{a}{b}{c}$ such that the equation $$x_1\colvec{3}{1}{1}{0}+x_2 \colvec{3}{0}{0}{1}+x_3 \colvec{3}{a}{b}{c}=\colvec{3}{7}{0}{-2}$$ has exactly 1 solution or explain why no such vector exists.
 \eq
 
-\begin{definition} A \textbf{linear combination} of a set $S$ is a vector of the form $$\sum_{i=1}^n c_i \vec{v_i} = c_1 \vec{v_1} + c_2 \vec{v_2}+...+c_k \vec{v_k}$$ where $\vec{v}_i \in S$. Note that $$\sum_{i=1}^n c_i \vec{v_i}$$ will not usually be in $S$ even though $\vec{v}_i \in S$. \end{definition}
+\begin{definition} A \textbf{linear combination} of a set $S$ is a vector of the form $$\sum_{i=1}^n c_i \vec{v_i} = c_1 \vec{v_1} + c_2 \vec{v_2}+...+c_n \vec{v_n}$$ where $\vec{v}_i \in S$. Note that $$\sum_{i=1}^n c_i \vec{v_i}$$ will not usually be in $S$ even though $\vec{v}_i \in S$. \end{definition}
 
 \bq Can you write $\vec{b}=\colvec{2}{2}{4}$ as a linear combination of $\vec{v_1}=\colvec{2}{1}{1}$ and $\vec{v_2}=\colvec{2}{-1}{1}$? Justify your answer.
 \eq
@@ -576,7 +576,7 @@ In this section, we will talk about efficient and clear ways to express the set 
 \end{annotation}
 \eq
 
-\bq\label{q4} Solve each of the following systems and present your solution set in parametric form.
+\bq\label{q4} Solve each of the following systems and present your solution set in parametric form. % I think I get what you're trying to do with parts a and b being the same, but students found it confusing
 \begin{enumerate}
 \item  $$ 3x_1-2x_2=0$$
 $$ 2x_1-2x_2=0 $$
@@ -604,11 +604,6 @@ A system of linear equations is \textbf{homogeneous} if the matrix form of the s
 \begin{definition} The \textbf{column space of a matrix} $A$, denoted $Col(A)$ is the set of vectors that can be written as a linear combination of the columns of $A$. If $A$ is $m$ by $n$, then $Col(A)=\{\vec{b} \in \mathbb{R}^m | A\vec{x} =\vec{b} \mbox{ for some } \vec{x} \in \mathbb{R}^n \}$.
 \end{definition}
 
-\begin{theorem} The pivot columns of a matrix $A$ generate $Col(A)$. This means that if $\vec{v} \in Col(A)$, then $\vec{v}$ can be written as a linear combination using only the pivot columns of $A$.
-\end{theorem}
-Note that this theorem uses the pivot columns of $A$ and \underline{\textbf{not}} the pivot columns of the \emph{echelon form} of $A$. Even though you need the echelon form to figure out which columns have pivots, you should use the appropriate columns of $A$ in your linear combination.
-
-
 \begin{definition} The \textbf{null space of a matrix}, denoted $Null(A)$, is the set of vectors that when multiplied by the matrix give the zero vector. In other words, $Null(A)$ is the solution set of the homogeneous equation $A\vec{x}=\vec{0}$.
 \end{definition}
 
@@ -621,6 +616,10 @@ Note that this theorem uses the pivot columns of $A$ and \underline{\textbf{not}
 \bq Let $$A=\begin{bmatrix} -3&6&-1&1&-7&0 \\1&-2&2&3&-1&0 \\2&-4&5&8&-8&0 \end{bmatrix}  \thicksim \begin{bmatrix} 1&-2&0&-1&0&0\\0&0&1&2&0&0 \\ 0&0&0&0&1&0 \end{bmatrix}$$
 What is the reduced row echelon form of $\begin{bmatrix} -3&-1&1 \\1&2&3 \\2&5&8\end{bmatrix}$? You should use the information given above and \textbf{not} a lot of calculations.
 \eq
+
+\begin{theorem} The pivot columns of a matrix $A$ generate $Col(A)$. This means that if $\vec{v} \in Col(A)$, then $\vec{v}$ can be written as a linear combination using only the pivot columns of $A$.
+\end{theorem}
+Note that this theorem uses the pivot columns of $A$ and \underline{\textbf{not}} the pivot columns of the \emph{echelon form} of $A$. Even though you need the echelon form to figure out which columns have pivots, you should use the appropriate columns of $A$ in your linear combination.
 
 \bq Let $$A=\begin{bmatrix} -3&6&-1&1&-7 \\1&-2&2&3&-1 \\2&-4&5&8&-8 \end{bmatrix} \thicksim \begin{bmatrix} 1&-2&0&-1&0\\0&0&1&2&0 \\ 0&0&0&0&1 \end{bmatrix}$$
 Describe $Col(A)$ and $Null(A)$ using a parametric form using as \underline{few} vectors as possible.
