@@ -1,0 +1,57 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+
+\textbf{Question 277:} Let $A$ be a square matrix with eigenvalue $\lambda$. Prove that $dim(E_{\lambda})\geq 1$.\newline
+\vspace{0.1in}
+\newline
+
+\textit{Proof}:  \textit{This proof has footnotes. Be sure to read them.}\newline
+\vspace{0.1in}
+\newline
+
+Let $A$ be a square matrix with eigenvalue $\lambda$. Recall that the set $$E_{\lambda}=\{\Vec{x}\in\mathbb{R}^n | (A-\lambda Id_{n})\Vec{x}=\Vec{0}\}$$ is a vector space by Theorem 276. By definition of eigenvalue (266), there exists a nonzero solution to the equation $A\Vec{x}=\lambda\Vec{x}$. So $E_{\lambda}$ contains a nonzero eigenvector $\Vec{x}$.\footnote{Note that, by question 273, $\alpha\Vec{x}$ is an eigenvector for any nonzero scalar $\alpha$. Therefore, $span(\{\Vec{x}\})\subseteq E_{\lambda}$.} 
+
+Suppose, for the sake of a contradiction, that $dim(E_{\lambda})\not\geq 1$. That is, suppose that $dim(E_{\lambda})=0$.\footnote{A basis is a set by definition, so the dimension is a cardinal number.} Then a basis for $E_{\lambda}$ contains zero elements. But this is a contradiction, since a basis must span $E_{\lambda}$ and $span(\emptyset)$ does not contain $\Vec{x}$.\footnote{See Question 204.}
+
+Therefore $dim(E_{\lambda})\geq 1$, as desired.
+
+
+\end{document}

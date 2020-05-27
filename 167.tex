@@ -1,0 +1,68 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+
+\textbf{Question 167}: Prove that if $T$ is a linear transformation from $V$ to $W$, then $T(\Vec{0_V})=\Vec{0_W}$.\newline
+\vspace{0.2in}
+\newline
+
+\textit{Proof}: Let $V$ and $W$ be vector spaces and $T$ be a linear transformation from $V$ to $W$. We will show that $T(\Vec{0}_V)=\Vec{0}_W$. 
+
+Let $\Vec{v}\in V$. We have previously shown that $0\Vec{v}=\Vec{0}_V$ and the analogous fact is true in the vector space $W$.\footnote{see Dr. Long's proof of 115(e)} For convenience, we reproduce this proof here. \newline
+\vspace{0.1in}
+\newline
+
+\textbf{Claim}: For any vector $\Vec{u}$ in a vector space $U$, $0\Vec{u}=\Vec{0}_U$.\newline
+\vspace{0.1in}
+\newline
+
+\textit{Proof of claim}: By vector space properties of $U$, we have $$\Vec{u}=1\Vec{u}=(1+0)\Vec{u}=1\Vec{u}+0\Vec{u}=\Vec{u}+0\Vec{u}.$$     Since $U$ is a vector space and $\Vec{u}\in U,$ we have the additive inverse vector $-\Vec{u}\in U$. Again by vector space properties, $$\Vec{0}_U=(-\Vec{u})+\Vec{u}=(-\Vec{u})+[\Vec{u}+0\Vec{u}]=[(-\Vec{u})+\Vec{u}]+0\Vec{u}=\Vec{0}_U+0\Vec{u}=0\Vec{u}.$$
+\vspace{0.1in}
+\newline
+
+We now return to the proof of 167. Since $T$ is linear, it follows that $$T(\Vec{0}_V)=T(0\Vec{v})=0\cdot T(\Vec{v})=\Vec{0}_W,$$ as desired.
+
+\end{document}
+
+The following approaches are problematic because it is difficult to show that $T(\Vec{0_V})$ in all of $W$; it is straightforward to show that $T(\Vec{0_V})$ acts as a zero vector in $range(T)$ but it does not immediately follow that it acts as the zero vector in the whole space $W$.
+
+Let $\Vec{v}\in V$. Then, by definition of vector space, there exists $-\Vec{v}$ such that $\Vec{v}+(-\Vec{v})=\Vec{0_V}$. Now, since $T$ is linear, $$T(\Vec{0_V})=T[\Vec{v}+(-\Vec{v})]=T(\Vec{v})+T(-\Vec{v})$$
+
+zero vector, $\Vec{v}+\Vec{0_V}=\Vec{v}$. Now, since $T$ is linear, we have $$T(\Vec{v})=T(\Vec{v}+\Vec{0_V})=T(\Vec{v})+T(\Vec{0_V}).$$

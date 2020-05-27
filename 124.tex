@@ -1,0 +1,68 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+% \textbf{Theorem 115}: A subset $H$ of a vector space $V$ is a subspace if and only if the following are true:
+% \begin{enumerate}[label=(\alph*)]
+%     \item The zero vector of $V$ is in $H$; $\Vec{0}_V\in H$
+%     \item $H$ is closed under vector addition; if $\Vec{u}$, $\Vec{v}\in H$, then $\Vec{u}+\Vec{v}\in H$
+%     \item $H$ is closed under scalar multiplication; if $\Vec{u}$ and $c\in\mathbb{R}$, then $c\Vec{u}\in H$
+% \end{enumerate}\newline
+% \vspace{0.2in}
+% \newline
+% Note: the implication is that $H$ is a vector space under the same the operations of vector addition and scalar multiplication as $V$.\newline
+% \vspace{0.2in}
+% \newline
+
+\textbf{Theorem 124}: If $A$ is an $m\times n$ matrix the solution set to the homogeneous equation $A\Vec{x}=\Vec{0}$ is a subspace of $\mathbb{R}^n$. \newline
+\vspace{0.2in}
+\newline
+
+\textit{Proof}: Let $A$ be an $m\times n$ matrix. We will use Theorem 115. Recall that the matrix vector product $A\Vec{x}$ is defined if and only if $\Vec{x}\in\mathbb{R}^n$. Therefore, the solution set to the equation $A\Vec{x}=\Vec{0}$ (also called the \textit{nullspace of $A$} or $Null(A)$) is a subset of $\mathbb{R}^n$. So it suffices to show that $\Vec{0}\in\mathbb{R}^n$, that $Null(A)$ is closed under vector addition, and that $Null(A)$ is closed under scalar multiplication. 
+
+The zero vector of $\mathbb{R}^n,$ $$\Vec{0}_n=\left[\begin{array}{c} 0 \\ \vdots \\ 0\end{array}\right].$$ By definition of matrix-vector product, $A\Vec{0}_n=\Vec{0}_m$, so $\Vec{0}_n\in Null(A)$. 
+
+Now consider $\Vec{u},\Vec{v}\in Null(A)$. We want to show that the vector $\Vec{u}+\Vec{v}\in Null(A)$. We claim\footnote{You should verify this claim yourself.} that $$A(\Vec{u}+\Vec{v})=A\Vec{u}+A\Vec{v},$$ in which case the result follows from the substitution $$A\Vec{u}+A\Vec{v}=\Vec{0}_n+\Vec{0}_n=\Vec{0}_n$$ by definition of $Null(A)$ and $\Vec{0}_n$.
+
+For closure under scalar multiplication, consider $c\in\mathbb{R}$ and $\Vec{u}\in Null(A)$. We want to show that the vector $c\Vec{u}\in Null(A)$. We claim\footnote{You should verify this claim yourself.} that $$A(c\Vec{u})=c(A\Vec{u})$$ in which case the result follows from the substitution $$c(A\Vec{u})=c(\Vec{0}_n)=c\left[\begin{array}{c} 0 \\ \vdots \\ 0\end{array}\right]=\left[\begin{array}{c} c\cdot 0 \\ \vdots \\ c\cdot 0\end{array}\right]=\left[\begin{array}{c} 0 \\ \vdots \\ 0\end{array}\right]=\Vec{0}_n$$ and the definition of multiplication in the real numbers. 
+
+Therefore, by theorem 115, $Null(A)$ is a subspace of $\mathbb{R}^n$.
+
+
+
+\end{document}
+
+We define a \textbf{matrix-vector product} as follows:
+
+If $A$ is a $m$ by $n$ matrix, $$A=\begin{bmatrix} a_{11} & a_{12} & ... &  a_{1n} \\
+  a_{21}& a_{22}& ... &  a_{2n} \\
+  \vdots  & \vdots &   &  \vdots   \\
+  a_{m1}& a_{m2} & ... &  a_{mn}  \end{bmatrix}$$ and $\vec{x}=\colvec{4}{x_1}{x_2}{\vdots}{x_n} \in \mathbb{R}^n$, then the \textbf{matrix-vector product} is given by $$A\vec{x} = x_1 \colvec{4}{a_{11}}{a_{21}}{\vdots}{a_{m1}}+x_2 \colvec{4}{a_{12}}{a_{22}}{\vdots}{a_{m2}}+ \cdots x_n \colvec{4}{a_{1n}}{a_{2n}}{\vdots}{a_{mn}}$$

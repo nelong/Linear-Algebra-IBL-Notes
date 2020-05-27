@@ -1,0 +1,73 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+\textbf{Theorem 112a}: Let $$\mathbb{P}=\{a_0+a_1 t+a_2 t^2+\cdots a_n t^n|n\in\mathbb{N}\cup\{0\}, a_i\in\mathbb{R}, 0\leq i\leq n\}=\left\{\sum_{i=0}^n a_it^i|n\in\mathbb{N}\cup\{0\},a_i\in\mathbb{R},0\leq i\leq n\right\},$$ the set of all polynomials with real coefficients. Then $\mathbb{P}$ is a vector space.\newline
+\vspace{0.2in}
+\newline
+\textit{Proof}: Let $u=a_0+\cdots a_nt^n$, $v=b_0+\cdots b_mt^m$, and $w=c_0+\cdots c_kt^k$ be arbitrary elements (vectors) of $\mathbb{P}$, so that $n,m,k\in\mathbb{N}\cup\{0\}$, $a_i\in\mathbb{R}$ for $0\leq i\leq n$, $b_j\in\mathbb{R}$ for $0\leq j\leq m$, and $c_l\in\mathbb{R}$ for $0\leq l\leq k$. The operations of addition and scalar multiplication are defined in the standard ways. In order to verify that $\mathbb{P}$ is a vector space, we must show that $\mathbb{P}$ satisfies the conditions of definition 103.
+
+\begin{enumerate}[label=(\alph*)]
+    \item Closure of vector addition: we must show that the sum of two arbitrary elements $u$ and $v$ is an element of $\mathbb{P}$. Now,
+    $$u+v=(a_0+\cdots a_nt^n)+(b_0+\cdots b_mt^m)=\left(\sum_{i=0}^n a_it^i\right)+\left(\sum_{j=0}^m b_jt^j\right)$$
+    Without loss of generality, let $n=max(n,m)$. Then, in the case where $m<n$, we can write 
+    $$v=\sum_{i=0}^n b_i t^i$$ where $b_i=0$ for $m<i<n$. So we have $$u+v=\left(\sum_{i=0}^na_i t^i\right)+\left(\sum_{i=0}^nb_i t^i\right)=\sum_{i=0}^n(a_i+b_i) t^i.$$
+    Since the real numbers are closed under addition, $a_i+b_i\in\mathbb{R}$ for each $0\leq i\leq n$, and therefore $u+v$ is an element of $\mathbb{P}$.
+    
+    \item Commutativity of vector addition: we must show that, for arbitrary vectors $u$ and $v$, $u+v=v+u$. We know that $$u+v=\left(\sum_{i=0}^na_i t^i\right)+\left(\sum_{i=0}^nb_i t^i\right)=\sum_{i=0}^n(a_i+b_i) t^i.$$ Since addition on the real numbers is commutative, $a_i+b_i=b_i+a_i$ for each $0\leq i\leq n$. Therefore, $$u+v=\sum_{i=0}^n(a_i+b_i) t^i=\sum_{i=0}^n(b_i+a_i) t^i=\sum_{i=0}^nb_it^i+\sum_{i=0}^n a_i t^i=v+u,$$ as desired.
+    
+    \item Associativity of vector addition: we must show that, for arbitrary vectors $u$, $v$, and $w$, $(u+v)+w=u+(v+w).$ Without loss of generality, let $n=max(n,m,k)$, so that we can write  
+    $$v=\sum_{i=0}^n b_i t^i$$ where $b_i=0$ for $m<i<n$ as above and similarly $$w=\sum_{i=0}^n c_i t^i$$ where $c_i=0$ for $k<i<n$. Now,
+    
+    $$(u+v)+w=\left(\sum_{i=0}^na_i t^i+\sum_{i=0}^nb_i t^i\right)+\sum_{i=0}^n c_i t^i=\sum_{i=0}^n[(a_i+b_i)+c_i] t^i.$$
+    
+    Since addition on the real numbers is associative, $(a_i+b_i)+c_i=a_i+(b_i+c_i)$ for all $0\leq i \leq n$. Therefore, $$(u+v)+w=\sum_{i=0}^n[(a_i+b_i)+c_i] t^i=\sum_{i=0}^n[a_i+(b_i+c_i)] t^i=\sum_{i=0}^n a_i t^i+\left(\sum_{i=0}^n (b_i+c_i) t^i\right)=\sum_{i=0}^n a_i t^i+\left(\sum_{i=0}^n b_i t^i +\sum_{i=0}^n c_i t^i\right)$$ which equals $u+(v+w)$, as desired.
+    
+    \item Existence of the zero vector: we must show that, for every element $u\in\mathbb{P}$, $\mathbb{P}$ contains an element $z$ so that $u+z=u$. Notice that $z=0\in\mathbb{P}$. That is, each coefficient of $t^i$, $z_i$, is 0 for all $i\in\mathbb{N}\cup\{0\}$. So $$u+z=\sum_{i=0}^n a_i t^i +\sum_{i=0} z_i t^i=\sum_{i=0} (a_i+z_i) t^i=\sum_{i=0} (a_i+0) t^i=\sum_{i=0} a_i t^i=u,$$ as desired. So $z$ is the zero vector, and we will write it as $\Vec{0}$.
+    
+    \item Existence of the additive inverse: we must show that, for each $u\in\mathbb{P},$ there exists $-u\in\mathbb{P}$ so that $u+(-u)=\Vec{0}$. For $u=\sum_{i=0}^n a_i t^i$, consider $x=\sum_{i=0}^n (-a_i) t^i$, where $-a_i$ is the additive inverse of $a_i$ in $\mathbb{R}$ for each $0\leq i \leq n$. Then $$u+x=\sum_{i=0}^n a_i t^i+\sum_{i=0}^n (-a_i) t^i=\sum_{i=0}^n [a_i+(-a_i)] t^i=\sum_{i=0}^n 0 t^i=\Vect{0},$$ as desired. So $x=-u$ and for every $u\in\mathbb{P},$ there exists $-u\in\mathbb{P}$ such that $u+(-u)=\Vec{0}.$
+    
+    \item Closure of scalar multiplication: let $p\in\mathbb{R}$. We must show that, for an arbitrary element $u\in\mathbb{P}$, $pu\in\mathbb{P}$. Now, $$pu=p\sum_{i=0}^n a_i t^i=\sum_{i=0}^n (pa_i) t^i.$$ Since the real numbers are closed under multiplication, $pa_i\in\mathbb{R}$ for each $0\leq i \leq n$. Therefore, $pu\in\mathbb{P},$ as desired.
+    
+    \item Distributive property of scalar multiplication across vector addition: We must show that $p(u+v)=pu+pv$ for an arbitrary scalar $p\in\mathbb{R}$ and arbitrary $u,v\in\mathbb{P}$. Now, $$p(u+v)=p\left(\sum_{i=0}^n a_i t^i+\sum_{i=0}^n b_i t^i\right)=p\sum_{i=0}^n (a_i+b_i) t^i=\sum_{i=0}^n p(a_i+b_i) t^i$$
+    By the distributive property of multiplication over addition in the real numbers, $p(a_i+b_i)=pa_i+pb_i$ for each $0\leq i\leq n$. So 
+    $$p(u+v)=\sum_{i=0}^n (pa_i+pb_i) t^i=\sum_{i=0}^n pa_i t^i+\sum_{i=0}^n pb_i t^i=p\sum_{i=0}^n a_i t^i+p\sum_{i=0}^n b_i t^i=pu+pv,$$ as desired. 
+    
+    \item Distributive property of scalar addition across scalar multiplication (of a vector): we must show that $(p+q)u=pu+qu$ for arbitrary scalars $p,q\in\mathbb{R}$ and an arbitrary element $u\in\mathbb{P}$. Now, $$(p+q)u=(p+q)\sum_{i=0}^n a_i t^i=\sum_{i=0}^n (p+q)a_i t^i.$$ By the distributive property of multiplication over addition in the real numbers, $(p+q)a_i=pa_i+qa_i$ for each $0\leq i\leq n$. Therefore $$(p+q)u=\sum_{i=0}^n (pa_i+qa_i) t^i=\sum_{i=0}^n pa_i t^i+\sum_{i=0}^n qa_i t^i=p\sum_{i=0}^n a_i t^i+q\sum_{i=0}^n a_i t^i=pu+qu,$$ as desired.
+    
+    \item Associativity of scalar multiplication: we must show that $p(qu)=(pq)u$ for arbitrary scalars $p,q\in\mathbb{R}$ and an arbitrary element $u\in \mathbb{P}$. Now, $$p(qu)=p\left(q\sum_{i=0}^n a_i t^i\right)=p\sum_{i=0}^n qa_i t^i=\sum_{i=0}^n p(qa_i) t^i.$$ By associativity of multiplication in the real numbers, $p(qa_i)=(pq)a_i$ for each $0\leq i\leq n$. Therefore, $$p(qu)=\sum_{i=0}^n (pq)a_i t^i=(pq)\sum_{i=0}^n a_i t^i=(pq)u,$$ as desired.
+    
+    \item Existence of scalar multiplicative identity: recall that 1 is the multiplicative identity in the real numbers. For an element $u\in\mathbb{P},$ we have $$1u=1\sum_{i=0}^n a_i t^i=\sum_{i=0}^n (1a_i) t^i=\sum_{i=0}^n a_i t^i=u.$$ Therefore 1 is also the scalar multiplicative identity for $\mathbb{P}$ as a real vector space.
+\end{enumerate}
+
+Since all conditions of the vector space definition are satisfied, $\mathbb{P}$ is a real vector space.
+
+\end{document}

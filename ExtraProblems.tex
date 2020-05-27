@@ -1,0 +1,82 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcount\colveccount
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+\textbf{Extra Problems}: 
+\begin{enumerate}
+\item[A.] Give an example of an invertible linear transformation from $\mathbb{R}^3\to\mathbb{R}^3$.
+
+Some examples include the identity transformation $$T_{Id}\left(\colvec{3}{x}{y}{z}\right)=\colvec{3}{x}{y}{z},$$ the projection which scales every vector by a factor of 2 $$T_2\left(\colvec{3}{x}{y}{z}\right)=\colvec{3}{2x}{2y}{2z},$$ and $$T_B\left(\colvec{3}{x}{y}{z}\right)=\colvec{3}{-7x-6y-12z}{5x+5y+z}{x+4z}.$$ % FCLA Archetype B
+
+You should verify on your own that these are linear transformations and that they are invertible.
+
+\item[B.] Give an example of a linear transformation from $\mathbb{R}^3\to\mathbb{R}^3$ that is not invertible.
+
+Some examples include the zero transformation $$T_0\left(\colvec{3}{x}{y}{z}\right)=\colvec{3}{0}{0}{0},$$ the projection onto the $xy-$plane $$T_{xy}\left(\colvec{3}{x}{y}{z}\right)=\colvec{3}{x}{y}{0},$$ and $$T_A\left(\colvec{3}{x}{y}{z}\right)=\colvec{3}{x-y+2z}{2x+y+z}{x+y}.$$ % FCLA Archetype A
+
+You should verify on your own that these are linear transformations and that they are not invertible. 
+
+\item[C.] Suppose that $Q$ is an invertible $n\times n$ matrix and $D$ is a diagonal matrix. Describe the matrix $(QDQ^{-1})^k$.
+
+Notice that $$(QDQ^{-1})^2=(QDQ^{-1})(QDQ^{-1})=QD(Q^{-1}Q)DQ^{-1}=QD(Id_n)DQ^{-1}=QDDQ^{-1}=QD^2Q^{-1},$$ which leads to the following:
+
+\textbf{Conjecture:} For all $k\in\mathbb{N}$, $(QDQ^{-1})^k=QD^kQ^{-1}$.
+
+\textit{Proof}: We proceed by induction. The base case is trivial since $(QDQ^{-1})^1=QDQ^{-1}=QD^1Q^{-1}$.
+
+For the inductive hypothesis, let $k\in\mathbb{N}$ and assume that $(QDQ^{-1})^k=QD^kQ^{-1}$. We must show that $(QDQ^{-1})^{k+1}=QD^{k+1}Q^{-1}$. Now, using the inductive hypothesis,
+\begin{align*}
+(QDQ^{-1})^{k+1} & =(QDQ^{-1})^k(QDQ^{-1}) \\ 
+& = (QD^kQ^{-1})(QDQ^{-1}) \\
+& = QD^k(Q^{-1}Q)DQ^{-1} \\ 
+& = QD^k(Id_n)DQ^{-1} \\ 
+& = QD^kDQ^{-1} \\ 
+& = QD^{k+1}Q^{-1} \\
+\end{align*}
+as desired. Therefore, by the Principle of Mathematical Induction, $(QDQ^{-1})^k=QD^kQ^{-1}$ for any natural number $k$.
+
+\end{enumerate}\newline
+\vspace{0.1in}
+\newline
+
+
+
+\end{document}

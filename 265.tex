@@ -1,0 +1,57 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+
+\textbf{Question 265:} Let $A$ be a square matrix. Prove that $det(A)=0$ iff $A\Vec{x}=\Vec{0}$ has solutions such that $\Vec{x}\neq\Vec{0}$.\newline
+\vspace{0.1in}
+\newline
+
+\textit{Proof}:  \textit{(This proof has footnotes, which are indicated by superscripts. Be sure to read them.)}
+
+Let $A$ be a square matrix. We will prove this biconditional statement by proving the statements ``If $det(A)=0$, then $A\Vec{x}=\Vec{0}$ has solutions such that $\Vec{x}\neq\Vec{0}$,'' and ``If $A\Vec{x}=\Vec{0}$ has solutions such that $\Vec{x}\neq\Vec{0}$, then $det(A)=0$. We begin with the second statement. 
+
+Assume that the equation $A\Vec{x}=\Vec{0}$ has a solution $\Vec{x}\neq\Vec{0}$. By the Invertible Matrix Theorem (241), $A$ is not invertible.\footnote{The logic of this assertion is the following: the invertible matrix theorem states that $A$ is invertible if and only if $A\Vec{x}=\Vec{0}$ has only the trivial solution. Therefore, the conditional statement ``If $A$ is invertible, then $A\Vec{x}=\Vec{0}$ has only the trivial solution'' is true. The contrapositive of this statement is also true: ``If $A\Vec{x}=\Vec{0}$ does not have only the trivial solution, then $A$ is not invertible.''} Then, by Theorem 261(e), $det(A)=0$\footnote{The original statement of the invertible matrix theorem does not include the determinant, but 261(e) can be added to the list of equivalent conditions.}.
+
+Now assume that $det(A)=0$. Then, by Theorem 261(e)\footnote{The statement in theorem 261(e) is ``A square matrix $A$ is invertible if and only if $det(A)\neq 0$.'' Therefore, the conditional statement, ``If $A$ is invertible, then $det(A)\neq 0$,'' is true. The contrapositive is also true: ``If $det(A)=0$, then $A$ is not invertible.''}, $A$ is not invertible. Then, by the Invertible Matrix Theorem,  $A\Vec{x}=\Vec{0}$ has solutions such that $\Vec{x}\neq\Vec{0}$.
+
+Therefore, for a square matrix $A$, $det(A)=0$ iff $A\Vec{x}=\Vec{0}$ has solutions such that $\Vec{x}\neq\Vec{0}$.
+
+
+\end{document}

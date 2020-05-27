@@ -1,0 +1,68 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+
+\textbf{Question 142}: Show that the set $\{1+t,t+t^2,1+t^3,t+t^2+t^3\}$ spans all of $\mathbb{P}_3$.\newline
+\vspace{0.2in}
+\newline
+
+\textit{Proof}: Let $S=\{1+t,t+t^2,1+t^3,t+t^2+t^3\}$. In order to show that $S$ spans $\mathbb{P}_3$, we must show that $span(S)=\mathbb{P}_3$. We will show these sets are equal by showing that $span(S)\subseteq\mathbb{P}_3$ and $\mathbb{P}_3\subseteq span(S)$. 
+
+Now, $span(S)\subseteq\mathbb{P}_3$ since an element of $span(S)$ has the form $$c_1(1+t)+c_2(t+t^2)+c_3(1+t^3)+c_4(t+t^2+t^3)=(c_1+c_3)+(c_1+c_2+c_4)t+(c_2+c_4)t^2+(c_3+c_4)t^3$$ which is in $\mathbb{P}_3$ by definition of the set. So it remains to show that $\mathbb{P}_3\subseteq span(S).$ Consider an arbitrary element of $\mathbb{P}_3$, $f(t)=a_0+a_1 t+a_2 t^2+a_3 t^3.$ We will show that $f(t)\in span(S).$ We need to know whether the equation $$c_1(1+t)+c_2(t+t^2)+c_3(1+t^3)+c_4(t+t^2+t^3)=a_0+a_1 t+a_2 t^2+a_3 t^3$$ has a solution. Again, we can rewrite this equation in the form $$(c_1+c_3)+(c_1+c_2+c_4)t+(c_2+c_4)t^2+(c_3+c_4)t^3=a_0+a_1 t+a_2 t^2+a_3 t^3.$$ These polynomials are equal exactly when coefficients of corresponding terms are equal, so we have the system of linear equations 
+$$c_1+c_3=a_0$$
+$$c_1+c_2+c_4=a_1$$
+$$c_2+c_4=a_2$$
+$$c_3+c_4=a_3$$
+with corresponding augmented matrix 
+$$\begin{bmatrix}[cccc|c]
+  1 & 0 & 1 & 0 & a_0\\
+  1 & 1 & 0 & 1 & a_1\\
+  0 & 1 & 0 & 1 & a_2\\  
+  0 & 0 & 1 & 1 & a_3\\
+\end{bmatrix}$$
+Since the reduced row-echelon form of the \textit{coefficient} matrix is 
+$$\begin{bmatrix}[cccc]
+  1 & 0 & 0 & 0 \\
+  0 & 1 & 0 & 0 \\
+  0 & 0 & 1 & 0 \\  
+  0 & 0 & 0 & 1 \\
+\end{bmatrix}$$
+there is no pivot in the augmentation column. By the consistency theorem, the corresponding system of linear equations is consistent, and $f(t)$ can always be written as a linear combination of the elements in $S$. By definition of \textit{span}, $f(t)\in span(S)$ and therefore $\mathbb{P}_3\subseteq span(S)$. Hence, $\mathbb{P}_3= span(S)$ and $S$ spans $\mathbb{P}_3$.
+\end{document}

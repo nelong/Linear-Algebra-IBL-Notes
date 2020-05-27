@@ -1,0 +1,96 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcount\colveccount
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+
+\textbf{Question 270:} Let $A$ be an $n\times n$ matrix. Prove that $det(A-\alpha Id_{n})=0$ iff $\alpha$ is an eigenvalue of $A$.\newline
+\vspace{0.1in}
+\newline
+
+\textit{Proof}:  Let $A$ be a square matrix. We will prove this biconditional statement by proving the statements ``If $det(A-\alpha Id_{n})=0$, then $\alpha$ is an eigenvalue of $A$,'' and ``If $\alpha$ is an eigenvalue of $A$, then $det(A-\alpha Id_{n})=0$. Write $$A=\begin{bmatrix} a_{11} & a_{12} & ... &  a_{1n} \\
+  a_{21}& a_{22}& ... &  a_{2n} \\
+  \vdots  & \vdots &   &  \vdots   \\
+  a_{m1}& a_{m2} & ... &  a_{mn}  \end{bmatrix}$$
+We begin by proving the first statement. 
+
+Assume that $det(A-\alpha Id_{n})=0$. By 265, there exists a vector $\Vec{x}\neq\Vec{0}$ such that $(A-\alpha Id_{n})\Vec{x}=\Vec{0}$. We may write $\Vec{x}=\colvec{4}{x_1}{x_2}{\vdots}{x_n}$ By properties of the matrix-vector product,
+
+$$(A-\alpha Id_{n})\Vec{x}=A\Vec{x}-(\alpha Id_{n})\Vec{x}=\Vec{0}.$$
+
+Now, $$A\Vec{x}=x_1 \colvec{4}{a_{11}}{a_{21}}{\vdots}{a_{n1}}+x_2 \colvec{4}{a_{12}}{a_{22}}{\vdots}{a_{n2}}+ \cdots + x_n \colvec{4}{a_{1n}}{a_{2n}}{\vdots}{a_{nn}}=\colvec{4}{x_1 a_{11}+x_2 a_{12}+\cdots+x_n a_{1n}}{{x_1 a_{21}+x_2 a_{22}+\cdots+x_n a_{2n}}}{\vdots}{x_1 a_{n1}+x_2 a_{n2}+\cdots+x_n a_{nn}}$$
+
+Furthermore, 
+$$\alpha Id_n=\alpha\begin{bmatrix} 1 & 0 & ... &  0 \\
+  0 & 1 & ... &  0 \\
+  \vdots  & \vdots &   &  \vdots   \\
+  0 & 0 & ... & 1  \end{bmatrix}=\begin{bmatrix} \alpha & 0 & ... &  0 \\
+  0 & \alpha & ... &  0 \\
+  \vdots  & \vdots &   &  \vdots   \\
+  0 & 0 & ... & \alpha  \end{bmatrix}$$
+and so
+
+$$(\alpha Id_{n})\Vec{x}=\begin{bmatrix} \alpha & 0 & ... &  0 \\
+  0 & \alpha & ... &  0 \\
+  \vdots  & \vdots &   &  \vdots   \\
+  0 & 0 & ... & \alpha  \end{bmatrix}\Vec{x}=\colvec{4}{\alpha x_1}{\alpha x_2}{\vdots}{\alpha x_n}.$$
+  
+Therefore, $$\colvec{4}{x_1 a_{11}+x_2 a_{12}+\cdots+x_n a_{1n}}{{x_1 a_{21}+x_2 a_{22}+\cdots+x_n a_{2n}}}{\vdots}{x_1 a_{n1}+x_2 a_{n2}+\cdots+x_n a_{nn}}-\colvec{4}{\alpha x_1}{\alpha x_2}{\vdots}{\alpha x_n}=\colvec{4}{0}{0}{\vdots}{0}.$$
+
+By definition of vector equality, for $1\leq i\leq n$, $$x_1 a_{i1}+x_2 a_{i2}+\cdots+x_n a_{in}-\alpha x_i=0.$$
+
+So $$A\Vec{x}=\colvec{4}{x_1 a_{11}+x_2 a_{12}+\cdots+x_n a_{1n}}{{x_1 a_{21}+x_2 a_{22}+\cdots+x_n a_{2n}}}{\vdots}{x_1 a_{n1}+x_2 a_{n2}+\cdots+x_n a_{nn}}=\colvec{4}{\alpha x_1}{\alpha x_2}{\vdots}{\alpha x_n}=\alpha\colvec{4}{x_1}{ x_2}{\vdots}{x_n}.$$ Since $\Vec{x}\neq 0$ by assumption, $\Vec{x}$ is an eigenvector of $A$ for the eigenvalue $\alpha$ by definition.
+
+The converse statement is proved similarly. Using the same notation for $A$ and $\Vec{x}$ as above, assume that $\alpha$ is an eigenvalue of $A$ with eigenvector $\Vec{x}$. Notice that $\Vec{x}\neq\Vec{0}$ by definition of eigenvector. Then $$\colvec{4}{x_1 a_{11}+x_2 a_{12}+\cdots+x_n a_{1n}}{{x_1 a_{21}+x_2 a_{22}+\cdots+x_n a_{2n}}}{\vdots}{x_1 a_{n1}+x_2 a_{n2}+\cdots+x_n a_{nn}}=A\Vec{x}=\alpha\Vec{x}=\alpha\colvec{4}{x_1}{ x_2}{\vdots}{x_n}=\colvec{4}{\alpha x_1}{\alpha x_2}{\vdots}{\alpha x_n}.$$
+
+By definition of vector equality, for $1\leq i\leq n$, $$x_1 a_{i1}+x_2 a_{i2}+\cdots+x_n a_{in}-\alpha x_i=0.$$ 
+
+Therefore, $$\colvec{4}{x_1 a_{11}+x_2 a_{12}+\cdots+x_n a_{1n}}{{x_1 a_{21}+x_2 a_{22}+\cdots+x_n a_{2n}}}{\vdots}{x_1 a_{n1}+x_2 a_{n2}+\cdots+x_n a_{nn}}-\colvec{4}{\alpha x_1}{\alpha x_2}{\vdots}{\alpha x_n}=\colvec{4}{0}{0}{\vdots}{0}.$$
+
+Notice that $$\colvec{4}{\alpha x_1}{\alpha x_2}{\vdots}{\alpha x_n}=\begin{bmatrix} \alpha & 0 & ... &  0 \\
+  0 & \alpha & ... &  0 \\
+  \vdots  & \vdots &   &  \vdots   \\
+  0 & 0 & ... & \alpha  \end{bmatrix}\Vec{x}=(\alpha Id_{n})\Vec{x}$$
+
+Therefore, $$(A-\alpha Id{n})\Vec{x}=A\Vec{x}-(\alpha Id_{n})\Vec{x}=\Vec{0},$$
+
+and by 265, $det(A\alpha Id_n)=0$, as desired.
+
+\end{document}

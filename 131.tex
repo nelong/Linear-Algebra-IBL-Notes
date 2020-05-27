@@ -1,0 +1,59 @@
+\documentclass{exam}
+\usepackage[all]{xy}
+\usepackage{color,graphicx}
+\usepackage{esvect}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\newcommand\Rn{$\mathbb{R}^n$}
+\newcommand\Rm{$\mathbb{R}^m$}
+\newcommand\R{$\mathbb{R}$}
+\newcommand\bq{\begin{question}}
+\newcommand\eq{\end{question}}
+\newcommand\be{\begin{enumerate}}
+\newcommand\ee{\end{enumerate}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{bmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{bmatrix}
+        \fi
+}
+
+\begin{document}
+
+
+\textbf{Question 131}: Can you write $2+4t$ as a linear combination of $1+t$ and $-1+t$?\newline
+\vspace{0.2in}
+\newline
+
+\textit{Proof}: We need to know whether the equation $$c_1(1+t)+c_2(-1+t)=2+4t$$ has a solution. Using the distributive property and collecting like terms gives the equation $$(c_1-c_2)+(c_1+c_2)t=2+4t.$$ Therefore, we must solve the system of equations
+$$c_1-c_2=2$$
+$$c_1+c_2=4$$
+The augmented matrix corresponding to this system is \begin{bmatrix}[cc|c]
+  1 & -1 & 2\\
+  1 & 1 & 4
+\end{bmatrix}
+and its reduced row-echelon form is 
+\begin{bmatrix}[cc|c]
+  1 & 0 & 3\\
+  0 & 1 & 1
+\end{bmatrix}. Therefore, the system is consistent with the unique solution $c_1=3$ and $c_2=1$. We can verify that $$3(1+t)+1(-1+t)=2+4t,$$ and the answer is \textbf{YES}.
+
+\end{document}
