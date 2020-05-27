@@ -43,6 +43,7 @@ Notes and Problems}
 \affiliation{Stephen F. Austin State University}
 \maketitle
 \tableofcontents
+% There is no index. I think the notes should include an index. If, for instructional purposes, you don't want to include one, I have two further suggestions. First, the instructor version should have an index. Second, I think that the introductory materials should prompt the class to create their own index as they go. I think this would support the pedagogical goals of not providing one, could explain those goals, and alert everyone from the start that they should be building the index.
 
 \begin{annotation}
 \chapter{To the Instructor}
@@ -71,7 +72,7 @@ One fruitful practice to involve students who are not presenting includes having
 
 Students will need to be reminded  about the goals, expectations, and reasoning for this pedagogical approach. These reminders should be done both at the individual level and as a class, but need to be done regularly during the first half of the course. One of the most potent reminders is pointing out how much good work and understanding students are able to generate themselves. Additionally, students find that they end up really thinking about math rather than trying to get an answer. Mike Starbird has a set of short videos on YouTube that give some main points of the book "The 5 Elements of Effective Thinking" by Burger and Starbird. I have had good success with having students watch these videos and giving a short written reflection. I use  some other reflective exercises when I anticipate that students will become frustrated with their increased involvement in the forward progress of the course.
 
-I have some general rules that help me  decide when to talk and what to talk about during class meetings. The first guidance is to not say anything that a student can say. By this, I mean that as an instructor, you should speak when what needs to be said can only come from the instructor. Allowing students the space and time to understand and accurately state a question or problem is central to active, inquiry-based classrooms. It can be very hard to understand when you need to intervene but it is essential to set the expectation of  student commentary from the start of the course. Two topics which students cannot easily discuss without guidance are notation and mathematical conventions. For example, you might publicly compliment a student  for good use of notation or effective wording choice in stating  a question, then talk about how the choices of the presenter \emph{guide} the reader. Consider  taking time to name as much as possible after students and give students as much credit as possible for their propositions. For instance, you can name a conjecture after the student who first proposed it, like the “\emph{Jane Doe Conjecture}.” I have found it useful to have some intermediate questions in my head at the start of class so that if the conversation stalls, I can pose a question that puts everyone on equal footing (an underprepared student can potentially contribute as much as a well-prepared student). With any additional time after student presentations, I either start students  on the next set of problems (so that I can head off any stumbling blocks early) or briefly introduce the next concept through the gap in knowledge that would be helpful to fill. For instance, when starting the idea of span of a set of vectors, I like to prompt a discussion on how many vectors can be generated from linear combinations of just two vectors.
+I have some general rules that help me decide when to talk and what to talk about during class meetings. The first guidance is to not say anything that a student can say. By this, I mean that as an instructor, you should speak when what needs to be said can only come from the instructor. Allowing students the space and time to understand and accurately state a question or problem is central to active, inquiry-based classrooms. It can be very hard to understand when you need to intervene but it is essential to set the expectation of  student commentary from the start of the course. Two topics which students cannot easily discuss without guidance are notation and mathematical conventions. For example, you might publicly compliment a student  for good use of notation or effective wording choice in stating  a question, then talk about how the choices of the presenter \emph{guide} the reader. Consider  taking time to name as much as possible after students and give students as much credit as possible for their propositions. For instance, you can name a conjecture after the student who first proposed it, like the “\emph{Jane Doe Conjecture}.” I have found it useful to have some intermediate questions in my head at the start of class so that if the conversation stalls, I can pose a question that puts everyone on equal footing (an underprepared student can potentially contribute as much as a well-prepared student). With any additional time after student presentations, I either start students  on the next set of problems (so that I can head off any stumbling blocks early) or briefly introduce the next concept through the gap in knowledge that would be helpful to fill. For instance, when starting the idea of span of a set of vectors, I like to prompt a discussion on how many vectors can be generated from linear combinations of just two vectors.
 
 
 \subsection{Student Expectations and Grading}
@@ -528,7 +529,7 @@ If $A$ is a $m$ by $n$ matrix, $$A=\begin{bmatrix} a_{11} & a_{12} & ... &  a_{1
 \bq If $A$ is a $m$ by $n$ matrix, then $A\vec{x} \in \mathbb{R}^\diamondsuit$ for what value of $\diamondsuit$?
 \eq
 
-It should not surprise you that you can multiply a scalar multiple of a vector by a matrix by factoring out the scalar. In mathematical notation, $A (k \vec{v}) = k (A\vec{v})$. Additionally, you can apply the scalar multiplication to the matrix. In other words, $A (k \vec{v}) = k (A\vec{v}) = (kA)\vec{v}$. These kind of manipulations will be discussed more when we work with matrix operations later, but you may find these facts useful in your work right now.
+It should not surprise you that you can multiply a scalar multiple of a vector by a matrix by factoring out the scalar. In mathematical notation, $A (k \vec{v}) = k (A\vec{v})$. Additionally, you can apply the scalar multiplication to the matrix. In other words, $A (k \vec{v}) = k (A\vec{v}) = (kA)\vec{v}$. These kind of manipulations will be discussed more when we work with matrix operations later, but you may find these facts useful in your work right now. % There should either be a question asking students to write this up, or a reminder that students should take time to write out these details for themselves. FWIW, I don't think that the notes explicitly discuss the manipulations later. I found myself scrambling/backtracking a little to include verification of the scalar multiplication property mentioned here, $A(\vec{u}+\vec{v})=A\vec{u}+A\vec{v}$, and analogous properties for matrix-matrix products. 
 
 \bq
 \be
@@ -759,7 +760,7 @@ A matrix $A$ is \textbf{symmetric} if $A^T=A$.
 
 
 \subsection{Special Types of Matrices}
-A \textbf{square} matrix is a matrix that has the same number of rows and columns. A $m$ by $n$ matrix $A$ is said to be \textbf{upper triangular} if $A_{i,j}=0$ whenever $i>j$. Similarly, a matrix $A$ is \textbf{lower triangular} if $A_{i,j}=0$ whenever $i<j$. We usually consider square matrices when we talk about upper or lower triangular, but it may be helpful to consider non-square cases.
+A \textbf{square} matrix is a matrix that has the same number of rows and columns. A $m$ by $n$ matrix $A$ is said to be \textbf{upper triangular} if $A_{i,j}=0$ whenever $i>j$. Similarly, a matrix $A$ is \textbf{lower triangular} if $A_{i,j}=0$ whenever $i<j$. We usually consider square matrices when we talk about upper or lower triangular, but it may be helpful to consider non-square cases. % Is there a reason you don't set these out as numbered definitions?
 
 \bq Give an example of a matrix that is upper triangular but is not in echelon form. If one does not exist, explain why.
 \eq
@@ -776,7 +777,7 @@ A \textbf{square} matrix is a matrix that has the same number of rows and column
 \eq
 The $n$ by $n$ identity matrix, denoted $Id_n$, is the unique matrix such that $Id_n \vec{x}= \vec{x}$ for every $\vec{x} \in \mathbb{R}^n$. In fact the entries of $Id_n$ are easily computed in terms of the Dirac delta function. Specifically $(Id_n)_{i,j}=\delta_{i,j}$, where $$\delta_{i,j}=\left\{ \begin{array}{cc} 0 & \mbox{if }i\neq j\\ 1 & \mbox{if } i = j \end{array} \right. $$
 
-\bq Write out $Id_5$ and use it to prove that for any $\vec{v} \in \mathbb{R}^5$ the product of $Id_5$ and $\vec{v}$ will always be $\vec{v}$.
+\bq Write out $Id_5$ and use it to prove that for any $\vec{v} \in \mathbb{R}^5$ the product of $Id_5$ and $\vec{v}$ will always be $\vec{v}$. % Might consider including a student warning and/or instructor note: ``Watch out for order in the matrix-vector product.''
 \eq
 
 \bq \underline{Superstar Bonus Question:} Prove that $Id_5$ is the only matrix that has the property from the problem above.
@@ -866,7 +867,7 @@ For instance, if $B = \left[ \begin{array}{ccc} 1 & 2 \\
 
 Vector spaces are the primary objects that we study in linear algebra. Generally speaking, a vector space is a collection of objects (called vectors) that preserves linear relationships; that is, the objects work well under vector addition and scalar multiplication. As you will see shortly, vectors are not always going to be the column vectors of Chapter 1 or viewed geometrically as arrows from one point to another.
 \begin{annotation}
-\endnote{The point of this chapter is do Chapter 1 in an abstract setting. This means using vector spaces that are not $\mathbb{R}^n$ with increasing frequency.}
+\endnote{The point of this chapter is do Chapter 1 in an abstract setting. This means using vector spaces that are not $\mathbb{R}^n$ with increasing frequency.} % I think the utility of translating from an abstract vector space of dimension $n$ to $\mathbb{R}^n$ is missing from the notes. Instructors can pull it out, sure, but explicit prompting through questions would make a huge difference. When this isn't included, instructors have to 1) anticipate the need for them to pull out these ideas and 2) quickly come up with questions that fit the flow. I'll write
 \end{annotation}
 \begin{definition}
 A \textbf{vector space}, $V$, is a nonempty set of objects called \emph{vectors} with two operations called addition and scalar multiplication such that the following hold for all $\vec{u}, \vec{v}, \vec{w} \in V$ and $c,d \in \mathbb{R}$:
@@ -875,7 +876,7 @@ A \textbf{vector space}, $V$, is a nonempty set of objects called \emph{vectors}
 \item $\vec{u}+\vec{v}=\vec{v}+\vec{u}$
 \item $(\vec{u}+\vec{v})+\vec{w}=\vec{u}+(\vec{v}+\vec{w})$
 \item There exists a vector $\vec{0}$ such that $\vec{v}+\vec{0}=\vec{v}$
-\item For each $\vec{u} \in V$, there is a vector $-\vec{u}$ such that $\vec{u} + (-\vec{u})=\vec{0}$.
+\item For each $\vec{u} \in V$, there is a vector $-\vec{u}\in V$ such that $\vec{u} + (-\vec{u})=\vec{0}$.
 \item If $\vec{u} \in V$ and $c \in \mathbb{R}$, then $c\vec{u} \in V$.
 \item $c(\vec{u}+\vec{v})=c\vec{u}+c\vec{v}$
 \item $(c+d)\vec{v}=c\vec{v}+d\vec{v}$
@@ -982,7 +983,7 @@ The following sets are also vector spaces:
 As Question \ref{vse} shows, it can be very tedious to prove that a set is indeed a vector space. A \textbf{subspace} of a vector space is a subset that is itself a vector space. Since most of the properties of the vector spaces we look at get inherited from some larger vector space, it is often easier to show that a set is a vector space by showing it is a subspace of the appropriate parent vector space.
 
 \begin{theorem}
-A subset $H$ of a vector space $V$ is a subspace if and only if the following are true:
+A subset $H$ of a vector space $V$ is a subspace if and only if the following are true: % operations are assumed to be the same as in $V$
 \begin{enumerate}
 \item The zero vector of $V$ is in $H$; $\vec{0}_V \in H$.
 \item H is closed under vector addition; if $\vec{u}, \vec{v} \in H$, then $\vec{u}+\vec{v}\in H$.
@@ -1036,7 +1037,7 @@ This theorem is so useful because we can prove a set is a vector space by checki
 \end{annotation}
 
 \section{Span}
-Recall that a \textbf{linear combination} of the set $\{\vec{v_1},..\vec{v_k} \}$ is a vector of the form $$\sum_{i=1}^n c_i \vec{v_i} = c_1 \vec{v_1} + c_2 \vec{v_2}+...+c_k \vec{v_k}$$
+Recall that a \textbf{linear combination} of the set $\{\vec{v_1},..\vec{v_k} \}$ is a vector of the form $$\sum_{i=1}^k c_i \vec{v_i} = c_1 \vec{v_1} + c_2 \vec{v_2}+...+c_k \vec{v_k}$$
 Note that some of the $c_i$ may be zero. In other words, not every vector in a set needs to be part of a linear combination from that set.
 
 \bq Can you write $\vec{b}=\colvec{2}{2}{4}$ as a linear combination of $\vec{v_1}=\colvec{2}{1}{1}$ and $\vec{v_2}=\colvec{2}{-1}{1}$? Remember that you need to justify your work on every problem.
