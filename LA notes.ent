@@ -29,6 +29,93 @@ possibilities
 in
 related
 problems.
+A
+reviewer
+for
+these
+notes
+suggested
+that
+I
+explain
+here
+what
+is
+meant
+by
+\lq
+\lq
+{Solve}\rq
+\rq
+.
+I
+don't
+typically
+explain
+this
+until
+a
+student
+asks
+what
+I
+mean
+by
+\lq
+\lq
+{Solve}\rq
+\rq
+.
+This
+both
+encourages
+them
+to
+ask
+a
+question
+when
+they
+are
+unsure
+and
+let's
+us
+all
+have
+a
+brief
+discussion
+to
+ensure
+we
+are
+on
+the
+same
+footing.
+The
+reviewer
+suggested
+\lq
+\lq
+{Find
+possible
+values
+of
+$x_1$
+and
+$x_2$
+so
+that
+the
+following
+equations
+are
+both
+true}\rq
+\rq
+.
 \@endanenote 
 \@doanenote {2}
 macro:->This
@@ -58,13 +145,20 @@ often
 see
 phrases
 like
-"matrix
+\lq
+\lq
+{matrix
 is
-unique"
+unique}\rq
+\rq
 or
-"matrix
+\lq
+\lq
+{matrix
 is
-consistent".
+consistent}\rq
+\rq
+.
 This
 is
 a
@@ -197,7 +291,7 @@ be
 left
 out.
 The
-proof
+proofs
 are
 rarely
 completed
@@ -303,9 +397,12 @@ and
 talking
 about
 things
-"everyone
+\lq
+\lq
+{everyone
 already
-knows."
+knows.}\rq
+\rq
 I
 like
 to
@@ -327,6 +424,59 @@ and
 examples.
 \@endanenote 
 \@doanenote {4}
+macro:->I
+have
+included
+Sage
+here
+because
+of
+its
+availability
+to
+all.
+You
+can
+run
+a
+single
+cell
+of
+Sage
+code
+at
+https://sagecell.sagemath.org/
+or
+you
+can
+run
+an
+individual
+installation
+of
+Sage.
+You
+can
+also
+use
+other
+web
+based
+resources
+like
+CalcPlot3D
+(https://c3d.libretexts.org/CalcPlot3D/index.html)
+or
+other
+systems
+like
+Mathematics,
+Matlab,
+Geogebra,
+etc.
+
+\@endanenote 
+\@doanenote {5}
 macro:->It
 may
 be
@@ -357,7 +507,7 @@ in
 the
 problem.
 \@endanenote 
-\@doanenote {5}
+\@doanenote {6}
 macro:->These
 applications
 are
@@ -384,7 +534,60 @@ for
 this
 course.
 \@endanenote 
-\@doanenote {6}
+\@doanenote {7}
+macro:->Sample
+Sage
+code
+that
+you
+may
+give
+to
+students
+would
+define
+A
+as
+the
+2
+by
+2
+matrix
+with
+entries
+1,
+2,
+3,
+and
+4
+and
+the
+vector
+x
+with
+components
+1
+and
+2,
+then
+computing
+$A^2
+x$
+is
+given
+below:
+\par
+\verb
+{A=matrix([[1,2],[3,4]])}
+\par
+\verb
+{x=vector((1,2))}
+\par
+\verb
+{A^2*x}
+
+\@endanenote 
+\@doanenote {8}
 macro:->This
 section
 mixes
@@ -421,7 +624,7 @@ in
 Chapter
 2.
 \@endanenote 
-\@doanenote {7}
+\@doanenote {9}
 macro:->The
 preceding
 problem
@@ -451,7 +654,7 @@ have
 right
 now.
 \@endanenote 
-\@doanenote {8}
+\@doanenote {10}
 macro:->Other
 instructors
 have
@@ -469,7 +672,7 @@ in
 the
 course.
 \@endanenote 
-\@doanenote {9}
+\@doanenote {11}
 macro:->The
 point
 of
@@ -497,7 +700,7 @@ with
 increasing
 frequency.
 \@endanenote 
-\@doanenote {10}
+\@doanenote {12}
 macro:->I
 remind
 students
@@ -546,7 +749,7 @@ of
 the
 definition.
 \@endanenote 
-\@doanenote {11}
+\@doanenote {13}
 macro:->You
 may
 want
@@ -577,7 +780,7 @@ guide
 your
 choices.
 \@endanenote 
-\@doanenote {12}
+\@doanenote {14}
 macro:->Sometimes
 students
 notice
@@ -627,7 +830,7 @@ write
 it
 up.
 \@endanenote 
-\@doanenote {13}
+\@doanenote {15}
 macro:->This
 application
 section
@@ -667,10 +870,12 @@ of
 as
 a
 linear
-transformation
+transformation,
 and
 thus
 the
+solutions
+to
 homogeneous
 differential
 equations
@@ -702,7 +907,7 @@ is
 also
 highlighted.
 \@endanenote 
-\@doanenote {14}
+\@doanenote {16}
 macro:->This
 section
 and
@@ -742,7 +947,7 @@ be
 quite
 useful.
 \@endanenote 
-\@doanenote {15}
+\@doanenote {17}
 macro:->This
 section
 can
@@ -769,7 +974,7 @@ for
 time
 reasons.
 \@endanenote 
-\@doanenote {16}
+\@doanenote {18}
 macro:->In
 the
 next
@@ -915,7 +1120,7 @@ the
 next
 section.
 \@endanenote 
-\@doanenote {17}
+\@doanenote {19}
 macro:->Throughout
 this
 section,
@@ -1029,7 +1234,7 @@ milage
 may
 vary.
 \@endanenote 
-\@doanenote {18}
+\@doanenote {20}
 macro:->Part
 e)
 of
@@ -1077,7 +1282,7 @@ and
 previews
 diagonalizability.
 \@endanenote 
-\@doanenote {19}
+\@doanenote {21}
 macro:->I
 do
 not

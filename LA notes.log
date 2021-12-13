@@ -1,158 +1,170 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.7)  4 OCT 2018 16:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.13)  13 DEC 2021 12:37
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **"./LA notes.tex"
-("LA notes.tex"
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
-\@input{jiblm_cn.aux}
-\openout2 = `jiblm_cn.aux'.
+(LA notes.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2021-11-22>
 
-(jiblm_cn.tex ("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
-Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk10.clo"
-File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+LaTeX Warning: \include should only be used after \begin{document} on input lin
+e 2.
+
+(jiblm_cn.tex
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
+\c@part=\count183
+\c@chapter=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\c@figure=\count190
+\c@table=\count191
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
 )
-(C:\Users\longne\AppData\Roaming\MiKTeX\2.9\tex\latex\piff\time.sty
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/piff\time.sty
 time.sty v1.0a, (C) Copyright Mike Piff, 15 Feb 1995 10:55:01 BST
 Package: time 
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+) (C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks14
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+\@enLab=\toks16
+) (C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks15
+\@emptytoks=\toks17
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip43
+)) (C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
-Package: amstext 2000/06/29 v2.01 AMS text
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
-\ex@=\dimen103
+\@emptytoks=\toks18
+\ex@=\dimen139
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen104
+\pmbraise@=\dimen140
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
-Package: amsopn 2016/03/08 v2.02 operator names
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count88
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count89
-\leftroot@=\count90
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count91
-\DOTSCASE@=\count92
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count93
-\c@MaxMatrixCols=\count94
-\dotsspace@=\muskip10
-\c@parentequation=\count95
-\dspbrk@lvl=\count96
-\tag@help=\toks17
-\row@=\count97
-\column@=\count98
-\maxfields@=\count99
-\andhelp@=\toks18
-\eqnshift@=\dimen106
-\alignsep@=\dimen107
-\tagshift@=\dimen108
-\tagwidth@=\dimen109
-\totwidth@=\dimen110
-\lineht@=\dimen111
-\@envbody=\toks19
-\multlinegap=\skip44
-\multlinetaggap=\skip45
-\mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+\inf@bad=\count192
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count193
+\leftroot@=\count194
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count195
+\DOTSCASE@=\count196
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count197
+\c@MaxMatrixCols=\count198
+\dotsspace@=\muskip16
+\c@parentequation=\count199
+\dspbrk@lvl=\count266
+\tag@help=\toks19
+\row@=\count267
+\column@=\count268
+\maxfields@=\count269
+\andhelp@=\toks20
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
-Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks21
-\thm@bodyfont=\toks22
-\thm@headfont=\toks23
-\thm@notefont=\toks24
-\thm@headpunct=\toks25
-\thm@preskip=\skip46
-\thm@postskip=\skip47
-\thm@headsep=\skip48
-\dth@everypar=\toks26
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
+\dth@everypar=\toks28
 )
-(C:\Users\longne\AppData\Roaming\MiKTeX\2.9\tex\latex\lettrine\lettrine.sty
-File: lettrine.sty 2015/08/31 v1.9 (Daniel Flipo)
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/lettrine\lettrine.sty
+File: lettrine.sty 2020-03-14 v2.23 (Daniel Flipo)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks27
+\KV@toks@=\toks29
 )
-\c@DefaultLines=\count100
-\c@DefaultDepth=\count101
-\DefaultFindent=\dimen112
-\DefaultNindent=\dimen113
-\DefaultSlope=\dimen114
-\DiscardVskip=\dimen115
-\L@lbox=\box28
-\L@tbox=\box29
-\c@L@lines=\count102
-\c@L@depth=\count103
-\L@Pindent=\dimen116
-\L@Findent=\dimen117
-\L@Nindent=\dimen118
-\L@lraise=\dimen119
-\L@first=\dimen120
-\L@next=\dimen121
-\L@slope=\dimen122
-\L@height=\dimen123
-\L@novskip=\dimen124
-\LettrineWidth=\dimen125
-\LettrineHeight=\dimen126
-\LettrineDepth=\dimen127
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/minifp\minifp.sty
+Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
+-based programing language.
+\MFP@loopctr=\count270
+)
+\c@DefaultLines=\count271
+\c@DefaultDepth=\count272
+\DefaultFindent=\dimen148
+\DefaultNindent=\dimen149
+\DefaultSlope=\dimen150
+\DiscardVskip=\dimen151
+\L@lbox=\box52
+\L@tbox=\box53
+\c@L@lines=\count273
+\c@L@depth=\count274
+\L@Pindent=\dimen152
+\L@Findent=\dimen153
+\L@Nindent=\dimen154
+\L@lraise=\dimen155
+\L@first=\dimen156
+\L@next=\dimen157
+\L@slope=\dimen158
+\L@height=\dimen159
+\L@novskip=\dimen160
+\L@target@ht=\dimen161
+\L@target@dp=\dimen162
+\L@target@tht=\dimen163
+\LettrineWidth=\dimen164
+\LettrineHeight=\dimen165
+\LettrineDepth=\dimen166
+\Llist@everypar=\toks30
 
 Loading lettrine.cfg
-(C:\Users\longne\AppData\Roaming\MiKTeX\2.9\tex\latex\lettrine\lettrine.cfg))
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\mathptmx.sty"
-Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/lettrine\lettrine.cfg)
+) (C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
@@ -186,224 +198,242 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
-)
-(C:\Users\longne\AppData\Roaming\MiKTeX\2.9\tex\latex\endnotes\endnotes.sty
-\c@endnote=\count104
-\endnotesep=\dimen128
+) (C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/endnotes\endnotes.st
+y
+Package: endnotes 2020-01-02 endnotes package
+\c@endnote=\count275
+\endnotesep=\dimen167
 \@enotes=\write3
 )
-(C:\Users\longne\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
-s
-\f@nch@headwidth=\skip49
-\f@nch@O@elh=\skip50
-\f@nch@O@erh=\skip51
-\f@nch@O@olh=\skip52
-\f@nch@O@orh=\skip53
-\f@nch@O@elf=\skip54
-\f@nch@O@erf=\skip55
-\f@nch@O@olf=\skip56
-\f@nch@O@orf=\skip57
-)
-(C:\Users\longne\AppData\Roaming\MiKTeX\2.9\tex\latex\comment\comment.sty
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip55
+\f@nch@O@elh=\skip56
+\f@nch@O@erh=\skip57
+\f@nch@O@olh=\skip58
+\f@nch@O@orh=\skip59
+\f@nch@O@elf=\skip60
+\f@nch@O@erf=\skip61
+\f@nch@O@olf=\skip62
+\f@nch@O@orf=\skip63
+) (C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
 \CommentStream=\write4
 
 Excluding comment 'comment')
-\c@theorem=\count105
+\c@theorem=\count276
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.sty"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xy.tex" Bootstrap'ing:
-catcodes, docmode, ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyrecat.tex"
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyidioms.tex")
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xy.sty
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xy.tex
+Bootstrap'ing: catcodes, docmode,
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyrecat.tex)
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyidioms.tex)
 
  Xy-pic version 3.8.9 <2013/10/06>
  Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen129
-\Y@c=\dimen130
-\U@c=\dimen131
-\D@c=\dimen132
-\L@c=\dimen133
-\R@c=\dimen134
-\Edge@c=\toks28
-\X@p=\dimen135
-\Y@p=\dimen136
-\U@p=\dimen137
-\D@p=\dimen138
-\L@p=\dimen139
-\R@p=\dimen140
-\Edge@p=\toks29
-\X@origin=\dimen141
-\Y@origin=\dimen142
-\X@xbase=\dimen143
-\Y@xbase=\dimen144
-\X@ybase=\dimen145
-\Y@ybase=\dimen146
-\X@min=\dimen147
-\Y@min=\dimen148
-\X@max=\dimen149
-\Y@max=\dimen150
-\lastobjectbox@=\box30
-\zerodotbox@=\box31
-\almostz@=\dimen151
+\X@c=\dimen168
+\Y@c=\dimen169
+\U@c=\dimen170
+\D@c=\dimen171
+\L@c=\dimen172
+\R@c=\dimen173
+\Edge@c=\toks31
+\X@p=\dimen174
+\Y@p=\dimen175
+\U@p=\dimen176
+\D@p=\dimen177
+\L@p=\dimen178
+\R@p=\dimen179
+\Edge@p=\toks32
+\X@origin=\dimen180
+\Y@origin=\dimen181
+\X@xbase=\dimen182
+\Y@xbase=\dimen183
+\X@ybase=\dimen184
+\Y@ybase=\dimen185
+\X@min=\dimen186
+\Y@min=\dimen187
+\X@max=\dimen188
+\Y@max=\dimen189
+\lastobjectbox@=\box54
+\zerodotbox@=\box55
+\almostz@=\dimen190
  direction,
-\d@X=\dimen152
-\d@Y=\dimen153
-\K@=\count106
-\KK@=\count107
-\Direction=\count108
-\K@dXdY=\dimen154
-\K@dYdX=\dimen155
-\xyread@=\read1
+\d@X=\dimen191
+\d@Y=\dimen192
+\K@=\count277
+\KK@=\count278
+\Direction=\count279
+\K@dXdY=\dimen193
+\K@dYdX=\dimen194
+\xyread@=\read2
 \xywrite@=\write5
-\csp@=\count109
-\quotPTK@=\dimen156
+\csp@=\count280
+\quotPTK@=\dimen195
 
 utility macros; pictures: \xy, positions,
-\swaptoks@@=\toks30
-\connectobjectbox@@=\box32
+\swaptoks@@=\toks33
+\connectobjectbox@@=\box56
  objects,
-\styletoks@=\toks31
+\styletoks@=\toks34
  decorations;
 kernel objects: directionals, circles, text; options; algorithms: directions,
 edges, connections;  Xy-pic loaded)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
 Package: xy 2013/10/06 Xy-pic version 3.8.9
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyall.tex"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyall.tex
  Xy-pic option: All features v.3.8
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycurve.tex"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xycurve.tex
  Xy-pic option: Curve and Spline extension v.3.12 curve,
-\crv@cnt@=\count110
-\crvpts@=\toks32
-\splinebox@=\box33
-\splineval@=\dimen157
-\splinedepth@=\dimen158
-\splinetol@=\dimen159
-\splinelength@=\dimen160
+\crv@cnt@=\count281
+\crvpts@=\toks35
+\splinebox@=\box57
+\splineval@=\dimen196
+\splinedepth@=\dimen197
+\splinetol@=\dimen198
+\splinelength@=\dimen199
  circles,
-\L@=\dimen161
+\L@=\dimen256
  loaded)
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyframe.tex"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyframe.tex
  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycmtip.tex"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xycmtip.tex
  Xy-pic option: Computer Modern tip extension v.3.7
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xytips.tex"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xytips.tex
  Xy-pic option: More Tips extension v.3.11 loaded) loaded)
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyline.tex"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyline.tex
  Xy-pic option: Line styles extension v.3.10
-\xylinethick@=\dimen162
+\xylinethick@=\dimen257
  loaded)
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyrotate.tex"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyrotate.tex
  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xycolor.tex"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xycolor.tex
  Xy-pic option: Colour extension v.3.11 loaded)
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xymatrix.tex"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xymatrix.tex
  Xy-pic option: Matrix feature v.3.14
-\Row=\count111
-\Col=\count112
-\queue@=\toks33
-\queue@@=\toks34
-\qcount@=\count113
-\qcount@@=\count114
-\matrixsize@=\count115
+\Row=\count282
+\Col=\count283
+\queue@=\toks36
+\queue@@=\toks37
+\qcount@=\count284
+\qcount@@=\count285
+\matrixsize@=\count286
  loaded)
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xyarrow.tex"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyarrow.tex
  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xygraph.tex"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xygraph.tex
  Xy-pic option: Graph feature v.3.11 loaded) loaded)
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf.tex"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf.tex
  Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-co.tex" loaded)
-Xy-pic pdf driver: `curve' extension support
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-cu.tex" loaded)
-Xy-pic pdf driver: `frame' extension support
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-fr.tex" loaded)
-Xy-pic pdf driver: `line' extension support
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-li.tex" loaded)
-Xy-pic pdf driver: `rotate' extension support
-("C:\Program Files\MiKTeX 2.9\tex\generic\xypic\xypdf-ro.tex" loaded) loaded))
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-co.tex
+loaded) Xy-pic pdf driver: `curve' extension support
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-cu.tex
+loaded) Xy-pic pdf driver: `frame' extension support
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-fr.tex
+loaded) Xy-pic pdf driver: `line' extension support
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-li.tex
+loaded) Xy-pic pdf driver: `rotate' extension support
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-ro.tex
+loaded) loaded))
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2021/10/11 v1.3b Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 147.
+Package color Info: Driver file: pdftex.def on input line 149.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 )
-\Gin@req@height=\dimen163
-\Gin@req@width=\dimen164
+\Gin@req@height=\dimen258
+\Gin@req@width=\dimen259
+) Include comment 'annotation'
+\colveccount=\count287
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+7.
+
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-Include comment 'annotation'
-\colveccount=\count116
- ("LA notes.aux")
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def
+File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count288
+\l__pdf_internal_box=\box58
+) (LA notes.aux
+
+LaTeX Warning: Label `q132' multiply defined.
+
+)
 \openout1 = `"LA notes.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 37.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 37
-.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 37.
+ (C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 37
-.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 37.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 37
-.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 37.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 37
-.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 37.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 37.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 37
+.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
@@ -414,83 +444,47 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
 Package xypdf Info: Line width: 0.3999pt on input line 37.
 
-(C:\Users\longne\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count117
-\scratchdimen=\dimen165
-\scratchbox=\box34
-\nofMPsegments=\count118
-\nofMParguments=\count119
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count120
-\MPscratchDim=\dimen166
-\MPnumerator=\count121
-\makeMPintoPDFobject=\count122
-\everyMPtoPDFconversion=\toks36
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+\scratchcounter=\count289
+\scratchdimen=\dimen260
+\scratchbox=\box59
+\nofMPsegments=\count290
+\nofMParguments=\count291
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen261
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
+\everyMPtoPDFconversion=\toks39
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-) [1
+85.
+
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package lettrine.sty Info: Targeted height = 20.41388pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 20.41388pt (D);
+(lettrine.sty)             reported on input line 44.
+ [1
 
 
-
-
-{C:/Users/longne/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
- ("LA notes.toc"
+{C:/Users/longne/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(LA notes.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-
-[2
+ [2
 
 
 ])
@@ -500,17 +494,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
  Including 'annotation' comment.
 \openout4 = `comment.cut'.
 
- Straight input of comment.cut.
-(comment.cut [3]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
- [4
+
+Straight input of comment.cut. (comment.cut [3] [4
 
 ]
 Overfull \hbox (4.88594pt too wide) in paragraph at lines 8--9
@@ -518,27 +503,26 @@ Overfull \hbox (4.88594pt too wide) in paragraph at lines 8--9
 di-rected graphs). These
  []
 
-[5] [6]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
- [7]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
- [8] [9]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 63.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+[5] [6] [7] [8] [9]
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 6
+9.
+
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
-) [10] [11
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
 
-] [12]
+[10]) [11]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+32.
+
+(C:\Users\longne\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+[12
+
+] [13]
 Chapter 1.
 Including 'annotation' comment.
 \openout4 = `comment.cut'.
@@ -550,10 +534,7 @@ Including 'annotation' comment.
 [1
 
 
-] [2] [3]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 245.
- [4] [5] [6] [7] [8] [9] Including 'annotation' comment.
+] [2] [3] [4] [5] [6] [7] [8] [9] Including 'annotation' comment.
 \openout4 = `comment.cut'.
 
 
@@ -562,10 +543,10 @@ Including 'annotation' comment.
 \openout4 = `comment.cut'.
 
  Straight input of comment.cut. (comment.cut)
-<3planeplot.png, id=82, 237.2865pt x 161.403pt>
+<3planeplot.png, id=85, 237.2865pt x 161.403pt>
 File: 3planeplot.png Graphic file (type png)
 <use 3planeplot.png>
-Package pdftex.def Info: 3planeplot.png  used on input line 460.
+Package pdftex.def Info: 3planeplot.png  used on input line 466.
 (pdftex.def)             Requested size: 355.92885pt x 242.1039pt.
 
 [11] [12 <./3planeplot.png>] [13] [14] [15] Including 'annotation' comment.
@@ -573,39 +554,36 @@ Package pdftex.def Info: 3planeplot.png  used on input line 460.
 
 
 Straight input of comment.cut. (comment.cut) [16] [17] [18] [19]
-LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 658.
-
 Including 'annotation' comment.
 \openout4 = `comment.cut'.
 
  Straight input of comment.cut. (comment.cut)
 [20]
-<network.png, id=118, 539.616pt x 264.99pt>
+<network.png, id=121, 539.616pt x 264.99pt>
 File: network.png Graphic file (type png)
 <use network.png>
-Package pdftex.def Info: network.png  used on input line 694.
+Package pdftex.def Info: network.png  used on input line 706.
 (pdftex.def)             Requested size: 269.80734pt x 132.49467pt.
  [21 <./network.png>] Including 'annotation' comment.
 \openout4 = `comment.cut'.
 
 
 Straight input of comment.cut. (comment.cut)
-Underfull \hbox (badness 2894) in paragraph at lines 717--719
+Underfull \hbox (badness 2894) in paragraph at lines 729--731
 []\OT1/ptm/b/n/12 Question 76. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A \OT
 1/ztmcm/m/n/12 = []$\OT1/ptm/m/it/12 , $\OML/ztmcm/m/it/12 B \OT1/ztmcm/m/n/12 
 = []$\OT1/ptm/m/it/12 , and 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
+Underfull \hbox (badness 10000) in paragraph at lines 737--738
 []\OT1/ptm/b/n/12 Question 77. []\OT1/ptm/m/it/12 Sym-bol-i-cally, $\OT1/ztmcm/
 m/n/12 (\OML/ztmcm/m/it/12 A \OT1/ztmcm/m/n/12 + \OML/ztmcm/m/it/12 B\OT1/ztmcm
 /m/n/12 )[] = []$ \OT1/ptm/m/it/12 and 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 741--743
+Underfull \hbox (badness 10000) in paragraph at lines 753--755
 []\OT1/ptm/b/n/12 Question 80. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A \OT
 1/ztmcm/m/n/12 = []$\OT1/ptm/m/it/12 , $\OML/ztmcm/m/it/12 B \OT1/ztmcm/m/n/12 
 = []$\OT1/ptm/m/it/12 , 
@@ -632,23 +610,23 @@ Including 'annotation' comment.
 
  Straight input of comment.cut.
 (comment.cut)
-Underfull \hbox (badness 1783) in paragraph at lines 951--952
+Underfull \hbox (badness 1783) in paragraph at lines 967--968
 []\OT1/ptm/b/n/12 Question 113. []\OT1/ptm/m/it/12 We are go-ing to take a look
  at the vec-tor space 
  []
 
-[29] [30] Including 'annotation' comment.
+[29] [30] [31] Including 'annotation' comment.
 \openout4 = `comment.cut'.
 
  Straight input of comment.cut.
-(comment.cut) [31] [32] [33]
-Overfull \hbox (1.9832pt too wide) in paragraph at lines 1104--1105
+(comment.cut) [32] [33]
+Overfull \hbox (1.9832pt too wide) in paragraph at lines 1120--1121
 []\OT1/ptm/b/n/12 Question 146. []\OT1/ptm/m/it/12 Does the span of $[]$ where 
 $[] \OMS/ztmcm/m/n/12 2 \U/msb/m/n/12 R[]$ \OT1/ptm/m/it/12 have to go through
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1104--1105
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1121
 \OT1/ptm/m/it/12 the
  []
 
@@ -657,10 +635,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1104--1105
 
  Straight input of comment.cut.
 (comment.cut) [36] [37]
-<smiley.png, id=177, 264.99pt x 149.358pt>
+<smiley.png, id=180, 264.99pt x 149.358pt>
 File: smiley.png Graphic file (type png)
 <use smiley.png>
-Package pdftex.def Info: smiley.png  used on input line 1226.
+Package pdftex.def Info: smiley.png  used on input line 1242.
 (pdftex.def)             Requested size: 264.98935pt x 149.35762pt.
  [38 <./smiley.png>] [39] [40]
 Including 'annotation' comment.
@@ -672,7 +650,7 @@ Chapter 3.
 [43
 
 ] [44] [45] [46] [47]
-Overfull \hbox (0.12645pt too wide) in paragraph at lines 1516--1517
+Overfull \hbox (0.12645pt too wide) in paragraph at lines 1532--1534
 []\OT1/ptm/b/n/12 Question 223. []\OT1/ptm/m/it/12 Give the el-e-men-tary ma-tr
 ix ob-tained by per-form-ing the given
  []
@@ -686,13 +664,13 @@ ix ob-tained by per-form-ing the given
 
  Straight input of comment.cut.
 (comment.cut) [51] [52] [53]
-Underfull \hbox (badness 2460) in paragraph at lines 1695--1696
+Underfull \hbox (badness 2460) in paragraph at lines 1711--1712
 []\OT1/ptm/b/n/12 Question 252. []\OT1/ptm/m/it/12 Use co-fac-tor ex-pan-sion a
 long the first col-umn of 
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 1697--1698
+Underfull \hbox (badness 2837) in paragraph at lines 1713--1714
 []\OT1/ptm/b/n/12 Question 253. []\OT1/ptm/m/it/12 Use co-fac-tor ex-pan-sion a
 long the sec-ond row of 
  []
@@ -702,19 +680,10 @@ long the sec-ond row of
 
  Straight input of comment.cut.
 (comment.cut)
-Underfull \hbox (badness 4660) in paragraph at lines 1746--1747
-[]\OT1/ptm/b/n/12 Question 263. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A[] 
-\OT1/ztmcm/m/n/12 = \OML/ztmcm/m/it/12 LU[] \OT1/ztmcm/m/n/12 = []$\OT1/ptm/m/i
-t/12 , where $\OML/ztmcm/m/it/12 L \OT1/ztmcm/m/n/12 = []$\OT1/ptm/m/it/12 , 
- []
-
-
-Underfull \hbox (badness 3407) in paragraph at lines 1746--1747
-\OML/ztmcm/m/it/12 U \OT1/ztmcm/m/n/12 = []$\OT1/ptm/m/it/12 , and $[] \OT1/ztm
-cm/m/n/12 = []$\OT1/ptm/m/it/12 . Com-pute $\OML/ztmcm/m/it/12 det\OT1/ztmcm/m/
-n/12 (\OML/ztmcm/m/it/12 L\OT1/ztmcm/m/n/12 )$\OT1/ptm/m/it/12 , $\OML/ztmcm/m/
-it/12 det\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 U\OT1/ztmcm/m/n/12 )$\OT1/ptm/m/
-it/12 , 
+Underfull \hbox (badness 10000) in paragraph at lines 1762--1763
+[]\OT1/ptm/b/n/12 Question 263. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A \O
+T1/ztmcm/m/n/12 = \OML/ztmcm/m/it/12 LU$\OT1/ptm/m/it/12 , where $\OML/ztmcm/m/
+it/12 L \OT1/ztmcm/m/n/12 = []$ \OT1/ptm/m/it/12 and 
  []
 
 [55] Including 'annotation' comment.
@@ -726,7 +695,7 @@ it/12 ,
 
 
 Straight input of comment.cut. (comment.cut) [58] [59]
-Overfull \hbox (29.35707pt too wide) in paragraph at lines 1873--1875
+Overfull \hbox (29.35707pt too wide) in paragraph at lines 1889--1891
 []\OT1/ptm/b/n/12 Question 290. []\OT1/ptm/m/it/12 Ex-am-ine each of the fol-lo
 w-ing trans-for-ma-tions of $\U/msb/m/n/12 R[]$ $[]$
  []
@@ -740,7 +709,7 @@ Including 'annotation' comment.
 [62
 
 ]
-Underfull \hbox (badness 2913) in paragraph at lines 1947--1947
+Underfull \hbox (badness 2913) in paragraph at lines 1967--1967
 []\OT1/ptm/b/n/12 Question 304. []\OT1/ptm/m/it/12 Find a vec-tor in $\OML/ztmc
 m/m/it/12 M[]\OT1/ztmcm/m/n/12 (\U/msb/m/n/12 R\OT1/ztmcm/m/n/12 )$ \OT1/ptm/m/
 it/12 that is or-thog-o-nal to 
@@ -750,37 +719,51 @@ it/12 that is or-thog-o-nal to
 \openout4 = `comment.cut'.
 
  Straight input of comment.cut.
-(comment.cut ("LA notes.ent" [66
+(comment.cut (LA notes.ent
+Overfull \hbox (101.71446pt too wide) in paragraph at lines 427--477
+\OT1/ptm/m/it/10 Sage. You can also use other web based re-sources like Cal-cPl
+ot3D (https://c3d.libretexts.org/CalcPlot3D/index.html)
+ []
+
+[66
 
 
-] [67])) [68] ("LA notes.aux") ) 
+] [67])) [68] (LA notes.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5870 strings out of 493305
- 76071 string characters out of 3138872
- 186317 words of memory out of 3000000
- 9178 multiletter control sequences out of 15000+200000
- 61815 words of font info for 141 fonts, out of 3000000 for 9000
+ 6700 strings out of 478659
+ 95951 string characters out of 2845445
+ 446048 words of memory out of 3000000
+ 24570 multiletter control sequences out of 15000+600000
+ 462717 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,45p,3250b,909s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/ba
-se/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/rsfs/rsfs10.pfb><C:/Users/longne/AppData/Roaming/MiKTeX/2.9/fonts/ty
-pe1/urw/symbol/usyr.pfb><C:/Users/longne/AppData/Roaming/MiKTeX/2.9/fonts/type1
-/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/urw/times/utmri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/xypic/xyatip10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/xypic/xyb
-tip10.pfb>
-Output written on "LA notes.pdf" (80 pages, 363169 bytes).
+ 61i,13n,67p,3250b,915s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
+:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cme
+x10.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/longne/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/longne/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/longne/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Use
+rs/longne/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/
+rsfs10.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbo
+l/usyr.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbo
+l/usyr.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
+/utmb8a.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/urw/time
+s/utmbi8a.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ti
+mes/utmr8a.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
+imes/utmri8a.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/xypic/xyatip10.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/xypic/xybtip10.pfb>
+Output written on "LA notes.pdf" (81 pages, 393155 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
+ 354 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
