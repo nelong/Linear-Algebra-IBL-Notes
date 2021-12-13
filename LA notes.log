@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.13)  13 DEC 2021 12:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.13)  13 DEC 2021 12:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -546,7 +546,7 @@ Including 'annotation' comment.
 <3planeplot.png, id=85, 237.2865pt x 161.403pt>
 File: 3planeplot.png Graphic file (type png)
 <use 3planeplot.png>
-Package pdftex.def Info: 3planeplot.png  used on input line 466.
+Package pdftex.def Info: 3planeplot.png  used on input line 467.
 (pdftex.def)             Requested size: 355.92885pt x 242.1039pt.
 
 [11] [12 <./3planeplot.png>] [13] [14] [15] Including 'annotation' comment.
@@ -562,28 +562,28 @@ Including 'annotation' comment.
 <network.png, id=121, 539.616pt x 264.99pt>
 File: network.png Graphic file (type png)
 <use network.png>
-Package pdftex.def Info: network.png  used on input line 706.
+Package pdftex.def Info: network.png  used on input line 707.
 (pdftex.def)             Requested size: 269.80734pt x 132.49467pt.
  [21 <./network.png>] Including 'annotation' comment.
 \openout4 = `comment.cut'.
 
 
 Straight input of comment.cut. (comment.cut)
-Underfull \hbox (badness 2894) in paragraph at lines 729--731
+Underfull \hbox (badness 2894) in paragraph at lines 730--732
 []\OT1/ptm/b/n/12 Question 76. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A \OT
 1/ztmcm/m/n/12 = []$\OT1/ptm/m/it/12 , $\OML/ztmcm/m/it/12 B \OT1/ztmcm/m/n/12 
 = []$\OT1/ptm/m/it/12 , and 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--738
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
 []\OT1/ptm/b/n/12 Question 77. []\OT1/ptm/m/it/12 Sym-bol-i-cally, $\OT1/ztmcm/
 m/n/12 (\OML/ztmcm/m/it/12 A \OT1/ztmcm/m/n/12 + \OML/ztmcm/m/it/12 B\OT1/ztmcm
 /m/n/12 )[] = []$ \OT1/ptm/m/it/12 and 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 753--755
+Underfull \hbox (badness 10000) in paragraph at lines 754--756
 []\OT1/ptm/b/n/12 Question 80. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A \OT
 1/ztmcm/m/n/12 = []$\OT1/ptm/m/it/12 , $\OML/ztmcm/m/it/12 B \OT1/ztmcm/m/n/12 
 = []$\OT1/ptm/m/it/12 , 
@@ -610,7 +610,7 @@ Including 'annotation' comment.
 
  Straight input of comment.cut.
 (comment.cut)
-Underfull \hbox (badness 1783) in paragraph at lines 967--968
+Underfull \hbox (badness 1783) in paragraph at lines 968--969
 []\OT1/ptm/b/n/12 Question 113. []\OT1/ptm/m/it/12 We are go-ing to take a look
  at the vec-tor space 
  []
@@ -620,13 +620,13 @@ Underfull \hbox (badness 1783) in paragraph at lines 967--968
 
  Straight input of comment.cut.
 (comment.cut) [32] [33]
-Overfull \hbox (1.9832pt too wide) in paragraph at lines 1120--1121
+Overfull \hbox (1.9832pt too wide) in paragraph at lines 1121--1122
 []\OT1/ptm/b/n/12 Question 146. []\OT1/ptm/m/it/12 Does the span of $[]$ where 
 $[] \OMS/ztmcm/m/n/12 2 \U/msb/m/n/12 R[]$ \OT1/ptm/m/it/12 have to go through
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1120--1121
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1122
 \OT1/ptm/m/it/12 the
  []
 
@@ -638,7 +638,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1120--1121
 <smiley.png, id=180, 264.99pt x 149.358pt>
 File: smiley.png Graphic file (type png)
 <use smiley.png>
-Package pdftex.def Info: smiley.png  used on input line 1242.
+Package pdftex.def Info: smiley.png  used on input line 1243.
 (pdftex.def)             Requested size: 264.98935pt x 149.35762pt.
  [38 <./smiley.png>] [39] [40]
 Including 'annotation' comment.
@@ -650,7 +650,7 @@ Chapter 3.
 [43
 
 ] [44] [45] [46] [47]
-Overfull \hbox (0.12645pt too wide) in paragraph at lines 1532--1534
+Overfull \hbox (0.12645pt too wide) in paragraph at lines 1533--1535
 []\OT1/ptm/b/n/12 Question 223. []\OT1/ptm/m/it/12 Give the el-e-men-tary ma-tr
 ix ob-tained by per-form-ing the given
  []
@@ -664,13 +664,13 @@ ix ob-tained by per-form-ing the given
 
  Straight input of comment.cut.
 (comment.cut) [51] [52] [53]
-Underfull \hbox (badness 2460) in paragraph at lines 1711--1712
+Underfull \hbox (badness 2460) in paragraph at lines 1712--1713
 []\OT1/ptm/b/n/12 Question 252. []\OT1/ptm/m/it/12 Use co-fac-tor ex-pan-sion a
 long the first col-umn of 
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 1713--1714
+Underfull \hbox (badness 2837) in paragraph at lines 1714--1715
 []\OT1/ptm/b/n/12 Question 253. []\OT1/ptm/m/it/12 Use co-fac-tor ex-pan-sion a
 long the sec-ond row of 
  []
@@ -680,7 +680,7 @@ long the sec-ond row of
 
  Straight input of comment.cut.
 (comment.cut)
-Underfull \hbox (badness 10000) in paragraph at lines 1762--1763
+Underfull \hbox (badness 10000) in paragraph at lines 1763--1764
 []\OT1/ptm/b/n/12 Question 263. []\OT1/ptm/m/it/12 Let $\OML/ztmcm/m/it/12 A \O
 T1/ztmcm/m/n/12 = \OML/ztmcm/m/it/12 LU$\OT1/ptm/m/it/12 , where $\OML/ztmcm/m/
 it/12 L \OT1/ztmcm/m/n/12 = []$ \OT1/ptm/m/it/12 and 
@@ -695,7 +695,7 @@ it/12 L \OT1/ztmcm/m/n/12 = []$ \OT1/ptm/m/it/12 and
 
 
 Straight input of comment.cut. (comment.cut) [58] [59]
-Overfull \hbox (29.35707pt too wide) in paragraph at lines 1889--1891
+Overfull \hbox (29.35707pt too wide) in paragraph at lines 1890--1892
 []\OT1/ptm/b/n/12 Question 290. []\OT1/ptm/m/it/12 Ex-am-ine each of the fol-lo
 w-ing trans-for-ma-tions of $\U/msb/m/n/12 R[]$ $[]$
  []
@@ -709,7 +709,7 @@ Including 'annotation' comment.
 [62
 
 ]
-Underfull \hbox (badness 2913) in paragraph at lines 1967--1967
+Underfull \hbox (badness 2913) in paragraph at lines 1968--1968
 []\OT1/ptm/b/n/12 Question 304. []\OT1/ptm/m/it/12 Find a vec-tor in $\OML/ztmc
 m/m/it/12 M[]\OT1/ztmcm/m/n/12 (\U/msb/m/n/12 R\OT1/ztmcm/m/n/12 )$ \OT1/ptm/m/
 it/12 that is or-thog-o-nal to 
@@ -761,7 +761,7 @@ mes/utmr8a.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
 imes/utmri8a.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/xypic/xyatip10.pfb><C:/Users/longne/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/xypic/xybtip10.pfb>
-Output written on "LA notes.pdf" (81 pages, 393155 bytes).
+Output written on "LA notes.pdf" (81 pages, 393087 bytes).
 PDF statistics:
  354 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

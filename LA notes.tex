@@ -81,7 +81,7 @@ Students are expected to work, both individually and as a group, on effective th
 
 From a mathematical content perspective, linear algebra offers a set of topics that is very coherent and offers students the opportunity to see how material fits together. Very often students have a \lq\lq{fake it until you make it}\rq\rq philosophy that can get them through lower-level mathematics courses that are lecture-driven. If students do not make the transition to sense-making rather than answer-getting, later mathematics courses can be very painful experiences. The first step is to make sure that students believe that the material \emph{should} make sense and is not a set of topics that is being forced upon them. I have found that linear algebra allows students to solve problems that they see as relevant to more than an abstract mathematical setting as well as unify ideas in branches of mathematics that they previously viewed as separated. More than in any other mathematical field, linear algebra works the way we hope and expect that it should.
 
-Some faculty have asked about what should be said to students about looking up answers. This is very difficult in an undergraduate linear algebra course since many answers are either easily computed or able to be looked up in a traditional textbook. I tent to talk to students directly about this and let them know that passing of someone else's work as their own is an academic honesty violation. There is also an emphasis on justification in these notes and since the order of these topics is not entirely standard, students often struggle to justify their ideas when they use other resources. This becomes especially evident with students use resources that haven't been defined in the text (like determinants, which are given relatively late in these notes). 
+Some faculty have asked about what should be said to students about looking up answers. This is very difficult in an undergraduate linear algebra course since many answers are either easily computed or able to be looked up in a traditional textbook. I tent to talk to students directly about this and let them know that passing of someone else's work as their own is an academic honesty violation. There is also an emphasis on justification in these notes and since the order of these topics is not entirely standard, students often struggle to justify their ideas when they use other resources. This becomes especially evident with students use resources that haven't been defined in the text (like determinants, which are given relatively late in these notes).
 
 The other professor who has used these notes at SFA also instituted a skills exam which was given after a few weeks of the course. This skills exam asked them to solve and interpret the solution for three systems of linear equations. Students could retake this exam multiple times but would not be able to get above a D grade unless they passed this exam.
 
@@ -382,9 +382,10 @@ $$-6r+10s-2t=3$$
 \end{enumerate}
 \end{question}
 \begin{question}
-Given an augmented matrix $[A|b]$ and its row reduced echelon form $[A'|b']$, write a procedure (set of steps) to give the solution set to the corresponding systems of equations. Make sure you are clear in writing out your steps.
+Once you have the augmented matrix for a system of linear equations in reduced row-echelon form, how do you use it to determine the solution set for the system? Write a step-by-step procedure that is general enough to be used on any system of linear equations. Be aware of any implicit assumptions you're making (and try to avoid them).
+%Given an augmented matrix $[A|b]$ and its row reduced echelon form $[A'|b']$, write a procedure (set of steps) to give the solution set to the corresponding systems of equations. Make sure you are clear in writing out your steps.
 
-Are there any ways in which your procedure will fail to work? Are there any systems whose augmented matrices will not have a reduced row echelon form?
+%Are there any ways in which your procedure will fail to work? Are there any systems whose augmented matrices will not have a reduced row echelon form?
 \end{question}
 
 
@@ -536,7 +537,7 @@ If $A$ is a $m$ by $n$ matrix, $$A=\begin{bmatrix} a_{11} & a_{12} & ... &  a_{1
 \bq If $A$ is a $m$ by $n$ matrix, then $A\vec{x} \in \mathbb{R}^\diamondsuit$ for what value of $\diamondsuit$?
 \eq
 
-It should not surprise you that you can multiply a scalar multiple of a vector by a matrix by factoring out the scalar. In mathematical notation, $A (k \vec{v}) = k (A\vec{v})$. Additionally, you can apply the scalar multiplication to the matrix. In other words, $A (k \vec{v}) = k (A\vec{v}) = (kA)\vec{v}$. These kind of manipulations will be discussed more when we work with matrix operations later, but you may find these facts useful in your work right now.
+It should not surprise you that you can multiply a scalar multiple of a vector by a matrix by factoring out the scalar. In mathematical notation, $A (k \vec{v}) = k (A\vec{v})$. Additionally, you can apply the scalar multiplication to the matrix. In other words, $A (k \vec{v}) = k (A\vec{v}) = (kA)\vec{v}$. These kind of manipulations will be discussed more when we work with matrix operations later, but you may find these facts useful in your work right now. You should take time to write out the details of any of this arithmetic ideas that you think would be useful in your work.
 
 \bq
 \be
@@ -691,12 +692,12 @@ Solving linear systems of equations can be used to balance equations of chemical
 \be
 \item If $u_t$, $s_t$, and $r_t$ are the percentages of the population in an urban, suburban, and rural areas in year $t$, set up a \underline{system of linear equations} for $u_{t+1}$, $s_{t+1}$, and $r_{t+1}$ in terms of $u_t$, $s_t$, and $r_t$.
 \item Write your answer to part $a)$ as a matrix equation where $\vec{x}_{t}=\colvec{3}{u_t}{s_t}{r_t}$ and $\vec{x}_{t+1}=\colvec{3}{u_{t+1}}{s_{t+1}}{r_{t+1}}$.
-\item Use Sage or another computational tool to compute $\vec{x_1}, \vec{x_2},...,\vec{x_{10}}$, when $\vec{x_0}=\colvec{3}{.4}{.2}{.4}$. \endnote{Sample Sage code that you may give to students would define A as the 2 by 2 matrix with entries 1, 2, 3, and 4 and the vector x with components 1 and 2, then computing $A^2 x$ is given below: 
-    
+\item Use Sage or another computational tool to compute $\vec{x_1}, \vec{x_2},...,\vec{x_{10}}$, when $\vec{x_0}=\colvec{3}{.4}{.2}{.4}$. \endnote{Sample Sage code that you may give to students would define A as the 2 by 2 matrix with entries 1, 2, 3, and 4 and the vector x with components 1 and 2, then computing $A^2 x$ is given below:
+
     \verb{A=matrix([[1,2],[3,4]])}
-    
+
     \verb{x=vector((1,2))}
-    
+
     \verb{A^2*x} }
 \ee
 \eq
@@ -890,7 +891,7 @@ A \textbf{vector space}, $V$, is a nonempty set of objects called \emph{vectors}
 \item $\vec{u}+\vec{v}=\vec{v}+\vec{u}$
 \item $(\vec{u}+\vec{v})+\vec{w}=\vec{u}+(\vec{v}+\vec{w})$
 \item There exists a vector $\vec{0}_V$ such that $\vec{v}+\vec{0}_V=\vec{v}$.
-\item For each $\vec{u} \in V$, there is a vector $-\vec{u}$ such that $\vec{u} + (-\vec{u})=\vec{0}$.
+\item For each $\vec{u} \in V$, there is a vector $-\vec{u} \in V$ such that $\vec{u} + (-\vec{u})=\vec{0}$.
 \item If $\vec{u} \in V$ and $c \in \mathbb{R}$, then $c\vec{u} \in V$.
 \item $c(\vec{u}+\vec{v})=c\vec{u}+c\vec{v}$
 \item $(c+d)\vec{v}=c\vec{v}+d\vec{v}$
@@ -941,7 +942,7 @@ Real valued vectors, $\mathbb{R}^n$, are a vector space since all of the above p
 The set of $m$ by $n$ matrices over the real numbers, $M_{m \times n}(\mathbb{R})$ or simply $M_{m \times n}$, is a vector space since all of the above properties hold when \lq\lq{vector}\rq\rq addition and scalar multiplication are done entry wise. The quotes are around vector in the previous sentence because you may not always think of matrices as being vectors but using the properties from Section \ref{mo}, you can treat matrices as vectors in the general sense.
 \end{example}
 
-\bq\label{vse} The set of polynomials (in variable $t$) of degree at most $n$ is denoted by $\mathbb{P}_n$. 
+\bq\label{vse} The set of polynomials (in variable $t$) of degree at most $n$ is denoted by $\mathbb{P}_n$.
 \be
 \item Is $t^2-4t \in \mathbb{P}_2$?
 \item Is $3t^2+t \in \mathbb{P}_3$?
@@ -1055,7 +1056,7 @@ This theorem is so useful because we can prove a set is a vector space by checki
 \end{annotation}
 
 \section{Span}
-Recall that a \textbf{linear combination} of the set $\{\vec{v_1},..\vec{v_k} \}$ is a vector of the form $$\sum_{i=1}^n c_i \vec{v_i} = c_1 \vec{v_1} + c_2 \vec{v_2}+...+c_k \vec{v_k}$$
+Recall that a \textbf{linear combination} of the set $\{\vec{v_1},..\vec{v_k} \}$ is a vector of the form $$\sum_{i=1}^k c_i \vec{v_i} = c_1 \vec{v_1} + c_2 \vec{v_2}+...+c_k \vec{v_k}$$
 Note that some of the $c_i$ may be zero. In other words, not every vector in a set needs to be part of a linear combination from that set.
 
 \bq Can you write $\vec{b}=\colvec{2}{2}{4}$ as a linear combination of $\vec{v_1}=\colvec{2}{1}{1}$ and $\vec{v_2}=\colvec{2}{-1}{1}$? Remember that you need to justify your work on every problem.
@@ -1903,12 +1904,12 @@ An \textbf{eigenvector} of a linear transformation $T:V \rightarrow V$ is a nonz
 \bq\label{q132} Let $T$ be the transformation of $\mathbb{R}^2$ given by $T(\vec{x})=A\vec{x}$ with $A=\begin{bmatrix}0&2\\-2&0 \end{bmatrix} $. Describe geometrically what the linear transformation $T$ does.
 \eq
 
-The next question demonstrates why we need to consider complex eigenvalues and eigenvectors even when the martix entries are real numbers. 
+The next question demonstrates why we need to consider complex eigenvalues and eigenvectors even when the martix entries are real numbers.
 
 \bq\label{q13} What are the eigenvalues and eigenvectors of $A=\begin{bmatrix}0&2\\-2&0 \end{bmatrix} $? You need to consider complex numbers for both the eigenvalues and eigenvectors. Be sure to check your eigenvalues and eigenvectors.
 \eq
 
-For the previous problem, we would technically need to work in a complex numbers to do the algebra, but we don't want to dwell on the algebra of complex vector spaces (which is actually not very different.) Instead, we would like to investigate what is happening geometrically when we have complex eigenvalues for matrices with real number entries. 
+For the previous problem, we would technically need to work in a complex numbers to do the algebra, but we don't want to dwell on the algebra of complex vector spaces (which is actually not very different.) Instead, we would like to investigate what is happening geometrically when we have complex eigenvalues for matrices with real number entries.
 
 \bq What do you think the scalar multiplication by $2i$ is doing in the previous problem? Think about a geometric answer and consider Question \label{q132}.
 \eq
