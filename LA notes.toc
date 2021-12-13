@@ -1,8 +1,4 @@
-\contentsline {chapter}{To the Instructor}{iv}{}%
-\contentsline {section}{\numberline {0.1}Course Background}{iv}{}%
-\contentsline {section}{\numberline {0.2}Classroom Mechanics}{vi}{}%
-\contentsline {subsection}{\numberline {0.2.1}Student Expectations and Grading}{viii}{}%
-\contentsline {chapter}{To the Student}{xii}{}%
+\contentsline {chapter}{To the Student}{iv}{}%
 \contentsline {chapter}{\numberline {1}Efficiently Solving Systems of Linear Equations and Matrix Operations}{1}{}%
 \contentsline {section}{\numberline {1.1}Warmup Problems}{1}{}%
 \contentsline {section}{\numberline {1.2}Solving Linear Systems}{3}{}%
@@ -39,4 +35,3 @@
 \contentsline {section}{\numberline {4.1}Inner Products}{62}{}%
 \contentsline {section}{\numberline {4.2}Orthogonal Complements}{64}{}%
 \contentsline {section}{\numberline {4.3}Orthonormal Bases.}{64}{}%
-\contentsline {chapter}{Notes to the Instructor}{66}{}%
